@@ -1,0 +1,2 @@
+source /Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/gdbinit/symbols
+source /Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/gdbinit/connect

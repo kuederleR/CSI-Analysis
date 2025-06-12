@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/CMakeFiles/bootloader
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/CMakeFiles/bootloader.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/CMakeFiles/bootloader-complete.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/ryan/esp/esp-csi/examples/get-started/csi_recv/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
