@@ -10,18 +10,18 @@ if(NOT EXISTS "/Users/ryan/esp/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/Users/ryan/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader"
-  "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix"
-  "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix/tmp"
-  "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix/src"
-  "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader"
+  "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix"
+  "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix/tmp"
+  "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix/src"
+  "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

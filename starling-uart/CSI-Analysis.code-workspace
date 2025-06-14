@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "CSI-Analysis",
+			"path": ".."
+		},
+		{
+			"name": ".venv",
+			"path": "../../../esp/esp-csi/examples/get-started/tools/.venv"
+		}
+	],
+	"settings": {}
+}

@@ -1,2 +1,2 @@
-source /Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader/gdbinit/symbols
-source /Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader/gdbinit/connect
+source /Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader/gdbinit/symbols
+source /Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader/gdbinit/connect

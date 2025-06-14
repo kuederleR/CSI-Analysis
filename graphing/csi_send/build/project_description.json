@@ -1,32 +1,32 @@
 {
     "version":            "1.2",
     "project_name":       "csi_send",
-    "project_version":    "0fc6f85",
-    "project_path":       "/Users/ryan/esp/esp-csi/examples/get-started/csi_send",
+    "project_version":    "c1c61ae-dirty",
+    "project_path":       "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send",
     "idf_path":           "/Users/ryan/esp/esp-idf",
-    "build_dir":          "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build",
-    "config_file":        "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/sdkconfig",
-    "config_defaults":    "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/sdkconfig.defaults",
-    "bootloader_elf":     "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/bootloader/bootloader.elf",
+    "build_dir":          "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build",
+    "config_file":        "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/sdkconfig",
+    "config_defaults":    "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/sdkconfig.defaults",
+    "bootloader_elf":     "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/bootloader/bootloader.elf",
     "app_elf":            "csi_send.elf",
     "app_bin":            "csi_send.bin",
     "build_type":         "flash_app",
     "git_revision":       "v6.0-dev-527-gadcbdd7da4",
-    "target":             "esp32",
-    "rev":                "0",
+    "target":             "esp32c6",
+    "rev":                "",
     "min_rev":            "0",
-    "max_rev":            "399",
+    "max_rev":            "99",
     "phy_data_partition": "",
     "monitor_baud" :      "115200",
-    "monitor_toolprefix": "xtensa-esp32-elf-",
-    "c_compiler":         "/Users/ryan/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
+    "monitor_toolprefix": "riscv32-esp-elf-",
+    "c_compiler":         "/Users/ryan/.espressif/tools/riscv32-esp-elf/esp-14.2.0_20241119/riscv32-esp-elf/bin/riscv32-esp-elf-gcc",
     "config_environment" : {
         "COMPONENT_KCONFIGS" : "/Users/ryan/esp/esp-idf/components/app_trace/Kconfig;/Users/ryan/esp/esp-idf/components/bt/Kconfig;/Users/ryan/esp/esp-idf/components/console/Kconfig;/Users/ryan/esp/esp-idf/components/driver/Kconfig;/Users/ryan/esp/esp-idf/components/efuse/Kconfig;/Users/ryan/esp/esp-idf/components/esp-tls/Kconfig;/Users/ryan/esp/esp-idf/components/esp_adc/Kconfig;/Users/ryan/esp/esp-idf/components/esp_coex/Kconfig;/Users/ryan/esp/esp-idf/components/esp_common/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_ana_cmpr/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_bitscrambler/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_cam/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_dac/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_gpio/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_gptimer/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_i2c/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_i2s/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_isp/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_jpeg/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_ledc/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_parlio/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_pcnt/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_rmt/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_sdm/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_spi/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_tsens/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_twai/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_uart/Kconfig;/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag/Kconfig;/Users/ryan/esp/esp-idf/components/esp_eth/Kconfig;/Users/ryan/esp/esp-idf/components/esp_event/Kconfig;/Users/ryan/esp/esp-idf/components/esp_gdbstub/Kconfig;/Users/ryan/esp/esp-idf/components/esp_hid/Kconfig;/Users/ryan/esp/esp-idf/components/esp_http_client/Kconfig;/Users/ryan/esp/esp-idf/components/esp_http_server/Kconfig;/Users/ryan/esp/esp-idf/components/esp_https_ota/Kconfig;/Users/ryan/esp/esp-idf/components/esp_https_server/Kconfig;/Users/ryan/esp/esp-idf/components/esp_hw_support/Kconfig;/Users/ryan/esp/esp-idf/components/esp_lcd/Kconfig;/Users/ryan/esp/esp-idf/components/esp_mm/Kconfig;/Users/ryan/esp/esp-idf/components/esp_netif/Kconfig;/Users/ryan/esp/esp-idf/components/esp_partition/Kconfig;/Users/ryan/esp/esp-idf/components/esp_phy/Kconfig;/Users/ryan/esp/esp-idf/components/esp_pm/Kconfig;/Users/ryan/esp/esp-idf/components/esp_psram/Kconfig;/Users/ryan/esp/esp-idf/components/esp_ringbuf/Kconfig;/Users/ryan/esp/esp-idf/components/esp_rom/Kconfig;/Users/ryan/esp/esp-idf/components/esp_security/Kconfig;/Users/ryan/esp/esp-idf/components/esp_system/Kconfig;/Users/ryan/esp/esp-idf/components/esp_timer/Kconfig;/Users/ryan/esp/esp-idf/components/esp_wifi/Kconfig;/Users/ryan/esp/esp-idf/components/espcoredump/Kconfig;/Users/ryan/esp/esp-idf/components/fatfs/Kconfig;/Users/ryan/esp/esp-idf/components/freertos/Kconfig;/Users/ryan/esp/esp-idf/components/hal/Kconfig;/Users/ryan/esp/esp-idf/components/heap/Kconfig;/Users/ryan/esp/esp-idf/components/ieee802154/Kconfig;/Users/ryan/esp/esp-idf/components/log/Kconfig;/Users/ryan/esp/esp-idf/components/lwip/Kconfig;/Users/ryan/esp/esp-idf/components/mbedtls/Kconfig;/Users/ryan/esp/esp-idf/components/mqtt/esp-mqtt/Kconfig;/Users/ryan/esp/esp-idf/components/newlib/Kconfig;/Users/ryan/esp/esp-idf/components/nvs_flash/Kconfig;/Users/ryan/esp/esp-idf/components/nvs_sec_provider/Kconfig;/Users/ryan/esp/esp-idf/components/openthread/Kconfig;/Users/ryan/esp/esp-idf/components/protocomm/Kconfig;/Users/ryan/esp/esp-idf/components/pthread/Kconfig;/Users/ryan/esp/esp-idf/components/soc/Kconfig;/Users/ryan/esp/esp-idf/components/spi_flash/Kconfig;/Users/ryan/esp/esp-idf/components/spiffs/Kconfig;/Users/ryan/esp/esp-idf/components/tcp_transport/Kconfig;/Users/ryan/esp/esp-idf/components/ulp/Kconfig;/Users/ryan/esp/esp-idf/components/unity/Kconfig;/Users/ryan/esp/esp-idf/components/usb/Kconfig;/Users/ryan/esp/esp-idf/components/vfs/Kconfig;/Users/ryan/esp/esp-idf/components/wear_levelling/Kconfig;/Users/ryan/esp/esp-idf/components/wifi_provisioning/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/ryan/esp/esp-idf/components/bootloader/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/ryan/esp/esp-idf/components/bootloader/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esp_tee/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/ryan/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
-    "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sd_intf", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "perfmon", "protobuf-c", "protocomm", "pthread", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "xtensa", "" ],
-    "build_component_paths" : [ "/Users/ryan/esp/esp-idf/components/app_trace", "/Users/ryan/esp/esp-idf/components/app_update", "/Users/ryan/esp/esp-idf/components/bootloader", "/Users/ryan/esp/esp-idf/components/bootloader_support", "/Users/ryan/esp/esp-idf/components/bt", "/Users/ryan/esp/esp-idf/components/cmock", "/Users/ryan/esp/esp-idf/components/console", "/Users/ryan/esp/esp-idf/components/cxx", "/Users/ryan/esp/esp-idf/components/driver", "/Users/ryan/esp/esp-idf/components/efuse", "/Users/ryan/esp/esp-idf/components/esp-tls", "/Users/ryan/esp/esp-idf/components/esp_adc", "/Users/ryan/esp/esp-idf/components/esp_app_format", "/Users/ryan/esp/esp-idf/components/esp_bootloader_format", "/Users/ryan/esp/esp-idf/components/esp_coex", "/Users/ryan/esp/esp-idf/components/esp_common", "/Users/ryan/esp/esp-idf/components/esp_driver_ana_cmpr", "/Users/ryan/esp/esp-idf/components/esp_driver_bitscrambler", "/Users/ryan/esp/esp-idf/components/esp_driver_cam", "/Users/ryan/esp/esp-idf/components/esp_driver_dac", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio", "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer", "/Users/ryan/esp/esp-idf/components/esp_driver_i2c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s", "/Users/ryan/esp/esp-idf/components/esp_driver_isp", "/Users/ryan/esp/esp-idf/components/esp_driver_jpeg", "/Users/ryan/esp/esp-idf/components/esp_driver_ledc", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm", "/Users/ryan/esp/esp-idf/components/esp_driver_parlio", "/Users/ryan/esp/esp-idf/components/esp_driver_pcnt", "/Users/ryan/esp/esp-idf/components/esp_driver_ppa", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt", "/Users/ryan/esp/esp-idf/components/esp_driver_sd_intf", "/Users/ryan/esp/esp-idf/components/esp_driver_sdio", "/Users/ryan/esp/esp-idf/components/esp_driver_sdm", "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc", "/Users/ryan/esp/esp-idf/components/esp_driver_sdspi", "/Users/ryan/esp/esp-idf/components/esp_driver_spi", "/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens", "/Users/ryan/esp/esp-idf/components/esp_driver_tsens", "/Users/ryan/esp/esp-idf/components/esp_driver_twai", "/Users/ryan/esp/esp-idf/components/esp_driver_uart", "/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/ryan/esp/esp-idf/components/esp_eth", "/Users/ryan/esp/esp-idf/components/esp_event", "/Users/ryan/esp/esp-idf/components/esp_gdbstub", "/Users/ryan/esp/esp-idf/components/esp_hid", "/Users/ryan/esp/esp-idf/components/esp_http_client", "/Users/ryan/esp/esp-idf/components/esp_http_server", "/Users/ryan/esp/esp-idf/components/esp_https_ota", "/Users/ryan/esp/esp-idf/components/esp_https_server", "/Users/ryan/esp/esp-idf/components/esp_hw_support", "/Users/ryan/esp/esp-idf/components/esp_lcd", "/Users/ryan/esp/esp-idf/components/esp_local_ctrl", "/Users/ryan/esp/esp-idf/components/esp_mm", "/Users/ryan/esp/esp-idf/components/esp_netif", "/Users/ryan/esp/esp-idf/components/esp_netif_stack", "/Users/ryan/esp/esp-idf/components/esp_partition", "/Users/ryan/esp/esp-idf/components/esp_phy", "/Users/ryan/esp/esp-idf/components/esp_pm", "/Users/ryan/esp/esp-idf/components/esp_psram", "/Users/ryan/esp/esp-idf/components/esp_ringbuf", "/Users/ryan/esp/esp-idf/components/esp_rom", "/Users/ryan/esp/esp-idf/components/esp_security", "/Users/ryan/esp/esp-idf/components/esp_system", "/Users/ryan/esp/esp-idf/components/esp_timer", "/Users/ryan/esp/esp-idf/components/esp_vfs_console", "/Users/ryan/esp/esp-idf/components/esp_wifi", "/Users/ryan/esp/esp-idf/components/espcoredump", "/Users/ryan/esp/esp-idf/components/esptool_py", "/Users/ryan/esp/esp-idf/components/fatfs", "/Users/ryan/esp/esp-idf/components/freertos", "/Users/ryan/esp/esp-idf/components/hal", "/Users/ryan/esp/esp-idf/components/heap", "/Users/ryan/esp/esp-idf/components/http_parser", "/Users/ryan/esp/esp-idf/components/idf_test", "/Users/ryan/esp/esp-idf/components/ieee802154", "/Users/ryan/esp/esp-idf/components/json", "/Users/ryan/esp/esp-idf/components/log", "/Users/ryan/esp/esp-idf/components/lwip", "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/main", "/Users/ryan/esp/esp-idf/components/mbedtls", "/Users/ryan/esp/esp-idf/components/mqtt", "/Users/ryan/esp/esp-idf/components/newlib", "/Users/ryan/esp/esp-idf/components/nvs_flash", "/Users/ryan/esp/esp-idf/components/nvs_sec_provider", "/Users/ryan/esp/esp-idf/components/openthread", "/Users/ryan/esp/esp-idf/components/partition_table", "/Users/ryan/esp/esp-idf/components/perfmon", "/Users/ryan/esp/esp-idf/components/protobuf-c", "/Users/ryan/esp/esp-idf/components/protocomm", "/Users/ryan/esp/esp-idf/components/pthread", "/Users/ryan/esp/esp-idf/components/rt", "/Users/ryan/esp/esp-idf/components/sdmmc", "/Users/ryan/esp/esp-idf/components/soc", "/Users/ryan/esp/esp-idf/components/spi_flash", "/Users/ryan/esp/esp-idf/components/spiffs", "/Users/ryan/esp/esp-idf/components/tcp_transport", "/Users/ryan/esp/esp-idf/components/ulp", "/Users/ryan/esp/esp-idf/components/unity", "/Users/ryan/esp/esp-idf/components/usb", "/Users/ryan/esp/esp-idf/components/vfs", "/Users/ryan/esp/esp-idf/components/wear_levelling", "/Users/ryan/esp/esp-idf/components/wifi_provisioning", "/Users/ryan/esp/esp-idf/components/wpa_supplicant", "/Users/ryan/esp/esp-idf/components/xtensa", "" ],
+    "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "riscv" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sd_intf", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_touch_sens", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_tee", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "protobuf-c", "protocomm", "pthread", "riscv", "rt", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "" ],
+    "build_component_paths" : [ "/Users/ryan/esp/esp-idf/components/app_trace", "/Users/ryan/esp/esp-idf/components/app_update", "/Users/ryan/esp/esp-idf/components/bootloader", "/Users/ryan/esp/esp-idf/components/bootloader_support", "/Users/ryan/esp/esp-idf/components/bt", "/Users/ryan/esp/esp-idf/components/cmock", "/Users/ryan/esp/esp-idf/components/console", "/Users/ryan/esp/esp-idf/components/cxx", "/Users/ryan/esp/esp-idf/components/driver", "/Users/ryan/esp/esp-idf/components/efuse", "/Users/ryan/esp/esp-idf/components/esp-tls", "/Users/ryan/esp/esp-idf/components/esp_adc", "/Users/ryan/esp/esp-idf/components/esp_app_format", "/Users/ryan/esp/esp-idf/components/esp_bootloader_format", "/Users/ryan/esp/esp-idf/components/esp_coex", "/Users/ryan/esp/esp-idf/components/esp_common", "/Users/ryan/esp/esp-idf/components/esp_driver_ana_cmpr", "/Users/ryan/esp/esp-idf/components/esp_driver_bitscrambler", "/Users/ryan/esp/esp-idf/components/esp_driver_cam", "/Users/ryan/esp/esp-idf/components/esp_driver_dac", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio", "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer", "/Users/ryan/esp/esp-idf/components/esp_driver_i2c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s", "/Users/ryan/esp/esp-idf/components/esp_driver_isp", "/Users/ryan/esp/esp-idf/components/esp_driver_jpeg", "/Users/ryan/esp/esp-idf/components/esp_driver_ledc", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm", "/Users/ryan/esp/esp-idf/components/esp_driver_parlio", "/Users/ryan/esp/esp-idf/components/esp_driver_pcnt", "/Users/ryan/esp/esp-idf/components/esp_driver_ppa", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt", "/Users/ryan/esp/esp-idf/components/esp_driver_sd_intf", "/Users/ryan/esp/esp-idf/components/esp_driver_sdio", "/Users/ryan/esp/esp-idf/components/esp_driver_sdm", "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc", "/Users/ryan/esp/esp-idf/components/esp_driver_sdspi", "/Users/ryan/esp/esp-idf/components/esp_driver_spi", "/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens", "/Users/ryan/esp/esp-idf/components/esp_driver_tsens", "/Users/ryan/esp/esp-idf/components/esp_driver_twai", "/Users/ryan/esp/esp-idf/components/esp_driver_uart", "/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag", "/Users/ryan/esp/esp-idf/components/esp_eth", "/Users/ryan/esp/esp-idf/components/esp_event", "/Users/ryan/esp/esp-idf/components/esp_gdbstub", "/Users/ryan/esp/esp-idf/components/esp_hid", "/Users/ryan/esp/esp-idf/components/esp_http_client", "/Users/ryan/esp/esp-idf/components/esp_http_server", "/Users/ryan/esp/esp-idf/components/esp_https_ota", "/Users/ryan/esp/esp-idf/components/esp_https_server", "/Users/ryan/esp/esp-idf/components/esp_hw_support", "/Users/ryan/esp/esp-idf/components/esp_lcd", "/Users/ryan/esp/esp-idf/components/esp_local_ctrl", "/Users/ryan/esp/esp-idf/components/esp_mm", "/Users/ryan/esp/esp-idf/components/esp_netif", "/Users/ryan/esp/esp-idf/components/esp_netif_stack", "/Users/ryan/esp/esp-idf/components/esp_partition", "/Users/ryan/esp/esp-idf/components/esp_phy", "/Users/ryan/esp/esp-idf/components/esp_pm", "/Users/ryan/esp/esp-idf/components/esp_psram", "/Users/ryan/esp/esp-idf/components/esp_ringbuf", "/Users/ryan/esp/esp-idf/components/esp_rom", "/Users/ryan/esp/esp-idf/components/esp_security", "/Users/ryan/esp/esp-idf/components/esp_system", "/Users/ryan/esp/esp-idf/components/esp_tee", "/Users/ryan/esp/esp-idf/components/esp_timer", "/Users/ryan/esp/esp-idf/components/esp_vfs_console", "/Users/ryan/esp/esp-idf/components/esp_wifi", "/Users/ryan/esp/esp-idf/components/espcoredump", "/Users/ryan/esp/esp-idf/components/esptool_py", "/Users/ryan/esp/esp-idf/components/fatfs", "/Users/ryan/esp/esp-idf/components/freertos", "/Users/ryan/esp/esp-idf/components/hal", "/Users/ryan/esp/esp-idf/components/heap", "/Users/ryan/esp/esp-idf/components/http_parser", "/Users/ryan/esp/esp-idf/components/idf_test", "/Users/ryan/esp/esp-idf/components/ieee802154", "/Users/ryan/esp/esp-idf/components/json", "/Users/ryan/esp/esp-idf/components/log", "/Users/ryan/esp/esp-idf/components/lwip", "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/main", "/Users/ryan/esp/esp-idf/components/mbedtls", "/Users/ryan/esp/esp-idf/components/mqtt", "/Users/ryan/esp/esp-idf/components/newlib", "/Users/ryan/esp/esp-idf/components/nvs_flash", "/Users/ryan/esp/esp-idf/components/nvs_sec_provider", "/Users/ryan/esp/esp-idf/components/openthread", "/Users/ryan/esp/esp-idf/components/partition_table", "/Users/ryan/esp/esp-idf/components/protobuf-c", "/Users/ryan/esp/esp-idf/components/protocomm", "/Users/ryan/esp/esp-idf/components/pthread", "/Users/ryan/esp/esp-idf/components/riscv", "/Users/ryan/esp/esp-idf/components/rt", "/Users/ryan/esp/esp-idf/components/sdmmc", "/Users/ryan/esp/esp-idf/components/soc", "/Users/ryan/esp/esp-idf/components/spi_flash", "/Users/ryan/esp/esp-idf/components/spiffs", "/Users/ryan/esp/esp-idf/components/tcp_transport", "/Users/ryan/esp/esp-idf/components/ulp", "/Users/ryan/esp/esp-idf/components/unity", "/Users/ryan/esp/esp-idf/components/usb", "/Users/ryan/esp/esp-idf/components/vfs", "/Users/ryan/esp/esp-idf/components/wear_levelling", "/Users/ryan/esp/esp-idf/components/wifi_provisioning", "/Users/ryan/esp/esp-idf/components/wpa_supplicant", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -39,7 +39,7 @@
             "priv_reqs": [ "esp_driver_gptimer", "esp_driver_gpio", "esp_driver_uart" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/app_trace/libapp_trace.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/app_trace/libapp_trace.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/app_trace/app_trace.c", "/Users/ryan/esp/esp-idf/components/app_trace/app_trace_util.c", "/Users/ryan/esp/esp-idf/components/app_trace/host_file_io.c", "/Users/ryan/esp/esp-idf/components/app_trace/port/port_uart.c" ],
             "include_dirs": [ "include" ]
         },
@@ -54,7 +54,7 @@
             "priv_reqs": [ "esptool_py", "efuse", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/app_update/libapp_update.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/app_update/esp_ota_ops.c", "/Users/ryan/esp/esp-idf/components/app_update/esp_ota_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -84,8 +84,8 @@
             "priv_reqs": [ "spi_flash", "mbedtls", "efuse", "heap", "esp_bootloader_format", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/bootloader_support/libbootloader_support.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/esp32/secure_boot_secure_features.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/bootloader_support/libbootloader_support.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_common.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_common_loader.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_clock_init.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_mem.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_random.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_efuse.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/secure_boot.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_random_esp32c6.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash_config_esp32c6.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_utility.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/flash_partitions.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/esp_image_format.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/bootloader_sha.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/esp32c6/bootloader_ecdsa.c", "/Users/ryan/esp/esp-idf/components/bootloader_support/src/esp32c6/secure_boot_secure_features.c" ],
             "include_dirs": [ "include", "bootloader_flash/include" ]
         },
         "bt": {
@@ -114,7 +114,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/cmock/libcmock.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/cmock/libcmock.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/cmock/CMock/src/cmock.c" ],
             "include_dirs": [ "CMock/src" ]
         },
@@ -129,7 +129,7 @@
             "priv_reqs": [ "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/console/libconsole.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/console/libconsole.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/console/commands.c", "/Users/ryan/esp/esp-idf/components/console/esp_console_common.c", "/Users/ryan/esp/esp-idf/components/console/esp_console_repl_internal.c", "/Users/ryan/esp/esp-idf/components/console/split_argv.c", "/Users/ryan/esp/esp-idf/components/console/linenoise/linenoise.c", "/Users/ryan/esp/esp-idf/components/console/esp_console_repl_chip.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_cmd.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_date.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_dbl.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_dstr.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_end.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_file.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_hashtable.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_int.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_lit.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_rem.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_rex.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_str.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/arg_utils.c", "/Users/ryan/esp/esp-idf/components/console/argtable3/argtable3.c" ],
             "include_dirs": [ "/Users/ryan/esp/esp-idf/components/console" ]
         },
@@ -144,7 +144,7 @@
             "priv_reqs": [ "esp_system", "pthread" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/cxx/libcxx.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/cxx/libcxx.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/cxx/cxx_exception_stubs.cpp", "/Users/ryan/esp/esp-idf/components/cxx/cxx_guards.cpp", "/Users/ryan/esp/esp-idf/components/cxx/cxx_init.cpp" ],
             "include_dirs": []
         },
@@ -159,9 +159,9 @@
             "priv_reqs": [ "efuse", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/driver/libdriver.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/driver/deprecated/adc_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/adc_dma_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/dac_common_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/esp32/dac_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/timer_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/i2c/i2c.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/i2s_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/mcpwm_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/pcnt_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/rmt_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/touch_sensor/touch_sensor_common.c", "/Users/ryan/esp/esp-idf/components/driver/touch_sensor/esp32/touch_sensor.c", "/Users/ryan/esp/esp-idf/components/driver/twai/twai.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/adc_i2s_deprecated.c" ],
-            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include", "touch_sensor/esp32/include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/driver/libdriver.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/driver/deprecated/adc_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/adc_dma_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/timer_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/i2c/i2c.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/i2s_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/mcpwm_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/pcnt_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/rmt_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c", "/Users/ryan/esp/esp-idf/components/driver/twai/twai.c" ],
+            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include" ]
         },
         "efuse": {
             "alias": "idf::efuse",
@@ -174,9 +174,9 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/efuse/libefuse.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/efuse/esp32/esp_efuse_table.c", "/Users/ryan/esp/esp-idf/components/efuse/esp32/esp_efuse_fields.c", "/Users/ryan/esp/esp-idf/components/efuse/esp32/esp_efuse_utility.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/Users/ryan/esp/esp-idf/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
-            "include_dirs": [ "include", "esp32/include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/efuse/libefuse.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/efuse/esp32c6/esp_efuse_table.c", "/Users/ryan/esp/esp-idf/components/efuse/esp32c6/esp_efuse_fields.c", "/Users/ryan/esp/esp-idf/components/efuse/esp32c6/esp_efuse_rtc_calib.c", "/Users/ryan/esp/esp-idf/components/efuse/esp32c6/esp_efuse_utility.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_api.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_fields.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_utility.c", "/Users/ryan/esp/esp-idf/components/efuse/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c", "/Users/ryan/esp/esp-idf/components/efuse/src/esp_efuse_startup.c" ],
+            "include_dirs": [ "include", "esp32c6/include" ]
         },
         "esp-tls": {
             "alias": "idf::esp-tls",
@@ -189,7 +189,7 @@
             "priv_reqs": [ "http_parser", "esp_timer", "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp-tls/libesp-tls.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp-tls/libesp-tls.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp-tls/esp_tls.c", "/Users/ryan/esp/esp-idf/components/esp-tls/esp-tls-crypto/esp_tls_crypto.c", "/Users/ryan/esp/esp-idf/components/esp-tls/esp_tls_error_capture.c", "/Users/ryan/esp/esp-idf/components/esp-tls/esp_tls_platform_port.c", "/Users/ryan/esp/esp-idf/components/esp-tls/esp_tls_mbedtls.c" ],
             "include_dirs": [ "/Users/ryan/esp/esp-idf/components/esp-tls", "esp-tls-crypto" ]
         },
@@ -201,12 +201,12 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_adc",
             "reqs": [],
-            "priv_reqs": [ "esp_driver_gpio", "efuse", "esp_pm", "esp_ringbuf", "esp_mm", "esp_driver_i2s", "driver" ],
+            "priv_reqs": [ "esp_driver_gpio", "efuse", "esp_pm", "esp_ringbuf", "esp_mm", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_adc/libesp_adc.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_adc/adc_oneshot.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_common.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_cali.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c", "/Users/ryan/esp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_continuous.c", "/Users/ryan/esp/esp-idf/components/esp_adc/esp32/adc_dma.c", "/Users/ryan/esp/esp-idf/components/esp_adc/esp32/adc_cali_line_fitting.c", "/Users/ryan/esp/esp-idf/components/esp_adc/deprecated/esp32/esp_adc_cal_legacy.c" ],
-            "include_dirs": [ "include", "interface", "esp32/include", "deprecated/include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_adc/libesp_adc.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_adc/adc_oneshot.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_common.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_cali.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c", "/Users/ryan/esp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_continuous.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_monitor.c", "/Users/ryan/esp/esp-idf/components/esp_adc/gdma/adc_dma.c", "/Users/ryan/esp/esp-idf/components/esp_adc/adc_filter.c", "/Users/ryan/esp/esp-idf/components/esp_adc/esp32c6/curve_fitting_coefficients.c" ],
+            "include_dirs": [ "include", "interface", "esp32c6/include", "deprecated/include" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -219,7 +219,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_app_format/libesp_app_format.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_app_format/libesp_app_format.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_app_format/esp_app_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -234,7 +234,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_bootloader_format/libesp_bootloader_format.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -249,8 +249,8 @@
             "priv_reqs": [ "esp_timer", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_coex/libesp_coex.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_coex/esp32/esp_coex_adapter.c", "/Users/ryan/esp/esp-idf/components/esp_coex/src/coexist_debug_diagram.c", "/Users/ryan/esp/esp-idf/components/esp_coex/src/coexist_debug.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_coex/libesp_coex.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_coex/src/coexist.c", "/Users/ryan/esp/esp-idf/components/esp_coex/src/lib_printf.c", "/Users/ryan/esp/esp-idf/components/esp_coex/esp32c6/esp_coex_adapter.c", "/Users/ryan/esp/esp-idf/components/esp_coex/src/coexist_debug_diagram.c", "/Users/ryan/esp/esp-idf/components/esp_coex/src/coexist_debug.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_common": {
@@ -264,7 +264,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_common/libesp_common.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_common/libesp_common.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
@@ -309,7 +309,7 @@
             "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_cam/libesp_driver_cam.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_cam/libesp_driver_cam.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_cam/esp_cam_ctlr.c", "/Users/ryan/esp/esp-idf/components/esp_driver_cam/dvp_share_ctrl.c" ],
             "include_dirs": [ "include", "interface" ]
         },
@@ -318,14 +318,14 @@
             "target": "___idf_esp_driver_dac",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_dac",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_dac",
             "reqs": [],
-            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_i2s" ],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_dac/libesp_driver_dac.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_dac/dac_oneshot.c", "/Users/ryan/esp/esp-idf/components/esp_driver_dac/dac_cosine.c", "/Users/ryan/esp/esp-idf/components/esp_driver_dac/dac_continuous.c", "/Users/ryan/esp/esp-idf/components/esp_driver_dac/dac_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_dac/esp32/dac_dma.c" ],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "./include" ]
         },
         "esp_driver_gpio": {
@@ -339,8 +339,8 @@
             "priv_reqs": [ "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/rtc_io.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/rtc_io.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/dedic_gpio.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio_pin_glitch_filter.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio_flex_glitch_filter.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gpio/src/gpio_etm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_gptimer": {
@@ -354,8 +354,8 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer/src/gptimer.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer/src/gptimer_common.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_gptimer/libesp_driver_gptimer.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer/src/gptimer.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer/src/gptimer_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_gptimer/src/gptimer_etm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_i2c": {
@@ -369,7 +369,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_i2c/i2c_master.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2c/i2c_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2c/i2c_slave.c" ],
             "include_dirs": [ "include" ]
         },
@@ -384,8 +384,8 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_std.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_pdm.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_platform.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_i2s/libesp_driver_i2s.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_std.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_pdm.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_tdm.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_etm.c", "/Users/ryan/esp/esp-idf/components/esp_driver_i2s/i2s_platform.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_isp": {
@@ -429,7 +429,7 @@
             "priv_reqs": [ "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_ledc/src/ledc.c" ],
             "include_dirs": [ "include" ]
         },
@@ -444,8 +444,8 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cap.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cmpr.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_com.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_fault.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_gen.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_oper.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_sync.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_timer.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_mcpwm/libesp_driver_mcpwm.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cap.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_cmpr.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_com.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_fault.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_gen.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_oper.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_sync.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_timer.c", "/Users/ryan/esp/esp-idf/components/esp_driver_mcpwm/src/mcpwm_etm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_parlio": {
@@ -453,14 +453,14 @@
             "target": "___idf_esp_driver_parlio",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_parlio",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_parlio",
             "reqs": [],
             "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_mm", "esp_driver_bitscrambler" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_parlio/libesp_driver_parlio.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_parlio/src/parlio_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_parlio/src/parlio_tx.c", "/Users/ryan/esp/esp-idf/components/esp_driver_parlio/src/parlio_rx.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_pcnt": {
@@ -474,7 +474,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_pcnt/libesp_driver_pcnt.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_pcnt/src/pulse_cnt.c" ],
             "include_dirs": [ "include" ]
         },
@@ -504,7 +504,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_bitscrambler", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_encoder.c", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_encoder_bytes.c", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_encoder_copy.c", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_encoder_simple.c", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_rx.c", "/Users/ryan/esp/esp-idf/components/esp_driver_rmt/src/rmt_tx.c" ],
             "include_dirs": [ "include" ]
         },
@@ -519,7 +519,7 @@
             "priv_reqs": [ "sdmmc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_sd_intf/libesp_driver_sd_intf.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_sd_intf/libesp_driver_sd_intf.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_sd_intf/sd_host.c" ],
             "include_dirs": [ "include" ]
         },
@@ -534,7 +534,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_sdio/src/sdio_slave.c" ],
             "include_dirs": [ "include" ]
         },
@@ -549,7 +549,7 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_sdm/src/sdm.c" ],
             "include_dirs": [ "include" ]
         },
@@ -558,14 +558,14 @@
             "target": "___idf_esp_driver_sdmmc",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_sdmmc",
             "reqs": [ "esp_driver_sd_intf", "sdmmc", "esp_driver_gpio" ],
             "priv_reqs": [ "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc/legacy/src/sdmmc_transaction.c", "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc/legacy/src/sdmmc_host.c", "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc/src/sd_host_sdmmc.c", "/Users/ryan/esp/esp-idf/components/esp_driver_sdmmc/src/sd_trans_sdmmc.c" ],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "include", "legacy/include" ]
         },
         "esp_driver_sdspi": {
@@ -579,7 +579,7 @@
             "priv_reqs": [ "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_sdspi/src/sdspi_crc.c", "/Users/ryan/esp/esp-idf/components/esp_driver_sdspi/src/sdspi_host.c", "/Users/ryan/esp/esp-idf/components/esp_driver_sdspi/src/sdspi_transaction.c" ],
             "include_dirs": [ "include" ]
         },
@@ -594,8 +594,8 @@
             "priv_reqs": [ "esp_timer", "esp_mm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c", "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_slave.c", "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_dma.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c", "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_slave.c", "/Users/ryan/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_slave_hd.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_touch_sens": {
@@ -603,29 +603,29 @@
             "target": "___idf_esp_driver_touch_sens",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens",
-            "type": "LIBRARY",
+            "type": "CONFIG_ONLY",
             "lib": "__idf_esp_driver_touch_sens",
             "reqs": [],
-            "priv_reqs": [ "esp_driver_gpio", "esp_timer" ],
+            "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_touch_sens/libesp_driver_touch_sens.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens/common/touch_sens_common.c", "/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens/hw_ver1/touch_version_specific.c" ],
-            "include_dirs": [ "include", "hw_ver1/include" ]
+            "file": "",
+            "sources": [],
+            "include_dirs": []
         },
         "esp_driver_tsens": {
             "alias": "idf::esp_driver_tsens",
             "target": "___idf_esp_driver_tsens",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_tsens",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_tsens",
             "reqs": [],
             "priv_reqs": [ "efuse" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_tsens/libesp_driver_tsens.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c", "/Users/ryan/esp/esp-idf/components/esp_driver_tsens/src/temperature_sensor_etm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_twai": {
@@ -639,7 +639,7 @@
             "priv_reqs": [ "esp_driver_gpio", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_twai/libesp_driver_twai.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_twai/libesp_driver_twai.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_twai/esp_twai.c", "/Users/ryan/esp/esp-idf/components/esp_driver_twai/esp_twai_onchip.c" ],
             "include_dirs": [ "include" ]
         },
@@ -654,8 +654,8 @@
             "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_ringbuf", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_uart/libesp_driver_uart.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uart.c", "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uart_wakeup.c", "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uhci.c", "/Users/ryan/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_driver_usb_serial_jtag": {
@@ -663,14 +663,14 @@
             "target": "___idf_esp_driver_usb_serial_jtag",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_esp_driver_usb_serial_jtag",
             "reqs": [],
             "priv_reqs": [ "esp_driver_gpio", "esp_ringbuf", "esp_pm", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag.c", "/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c", "/Users/ryan/esp/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_eth": {
@@ -684,8 +684,8 @@
             "priv_reqs": [ "log", "esp_timer", "esp_driver_spi", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_eth/libesp_eth.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_eth/src/esp_eth.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_802_3.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp_dma.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp_gpio.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_generic.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_dp83848.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_ip101.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_ksz80xx.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_lan87xx.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_rtl8201.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_eth/libesp_eth.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_eth/src/esp_eth.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_802_3.c", "/Users/ryan/esp/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_event": {
@@ -699,7 +699,7 @@
             "priv_reqs": [ "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_event/libesp_event.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_event/libesp_event.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_event/default_event_loop.c", "/Users/ryan/esp/esp-idf/components/esp_event/esp_event.c", "/Users/ryan/esp/esp-idf/components/esp_event/esp_event_private.c" ],
             "include_dirs": [ "include" ]
         },
@@ -714,8 +714,8 @@
             "priv_reqs": [ "soc", "esp_rom", "esp_system" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_gdbstub/libesp_gdbstub.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/gdbstub.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/packet.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub_xtensa.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/port/xtensa/gdbstub-entry.S", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/port/xtensa/xt_debugexception.S" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_gdbstub/libesp_gdbstub.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/gdbstub.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/gdbstub_transport.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/packet.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/port/riscv/gdbstub_riscv.c", "/Users/ryan/esp/esp-idf/components/esp_gdbstub/src/port/riscv/rv_decode.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_hid": {
@@ -729,7 +729,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_hid/libesp_hid.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_hid/libesp_hid.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_hid/src/esp_hidd.c", "/Users/ryan/esp/esp-idf/components/esp_hid/src/esp_hidh.c", "/Users/ryan/esp/esp-idf/components/esp_hid/src/esp_hid_common.c" ],
             "include_dirs": [ "include" ]
         },
@@ -744,7 +744,7 @@
             "priv_reqs": [ "tcp_transport", "http_parser" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_http_client/libesp_http_client.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_http_client/libesp_http_client.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_http_client/esp_http_client.c", "/Users/ryan/esp/esp-idf/components/esp_http_client/lib/http_auth.c", "/Users/ryan/esp/esp-idf/components/esp_http_client/lib/http_header.c", "/Users/ryan/esp/esp-idf/components/esp_http_client/lib/http_utils.c" ],
             "include_dirs": [ "include" ]
         },
@@ -759,7 +759,7 @@
             "priv_reqs": [ "mbedtls", "lwip", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_http_server/libesp_http_server.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_http_server/libesp_http_server.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_http_server/src/httpd_main.c", "/Users/ryan/esp/esp-idf/components/esp_http_server/src/httpd_parse.c", "/Users/ryan/esp/esp-idf/components/esp_http_server/src/httpd_sess.c", "/Users/ryan/esp/esp-idf/components/esp_http_server/src/httpd_txrx.c", "/Users/ryan/esp/esp-idf/components/esp_http_server/src/httpd_uri.c", "/Users/ryan/esp/esp-idf/components/esp_http_server/src/httpd_ws.c", "/Users/ryan/esp/esp-idf/components/esp_http_server/src/util/ctrl_sock.c" ],
             "include_dirs": [ "include" ]
         },
@@ -774,7 +774,7 @@
             "priv_reqs": [ "log", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_https_ota/libesp_https_ota.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_https_ota/libesp_https_ota.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_https_ota/src/esp_https_ota.c" ],
             "include_dirs": [ "include" ]
         },
@@ -789,7 +789,7 @@
             "priv_reqs": [ "lwip" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_https_server/libesp_https_server.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_https_server/libesp_https_server.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_https_server/src/https_server.c" ],
             "include_dirs": [ "include" ]
         },
@@ -801,12 +801,12 @@
             "type": "LIBRARY",
             "lib": "__idf_esp_hw_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
+            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "hal", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_hw_support/libesp_hw_support.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_hw_support/cpu.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/esp_cpu_intr.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/cpu_region_protect.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_clk.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/clk_ctrl_os.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/hw_random.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/intr_alloc.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/mac_addr.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/periph_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/revision.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/rtc_module.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/regi2c_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_gpio_reserve.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sar_periph_ctrl_common.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/io_mux.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/esp_clk_tree.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/esp_dma_utils.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/gdma_link.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/spi_bus_lock.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/clk_utils.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp_clk_tree_common.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/spi_share_hw_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/adc_share_hw_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_modem.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_modes.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_console.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_usb.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_gpio.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_event.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/rtc_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/mspi_timing_tuning.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_wake_stub.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_clock_output.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/power_supply/brownout.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_clk_init.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_init.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_sleep.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/chip_info.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/cache_sram_mmu.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32/sar_periph_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/lowpower" ],
-            "include_dirs": [ "include", "include/soc", "include/soc/esp32", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_hw_support/libesp_hw_support.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_hw_support/cpu.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/esp_cpu_intr.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_memory_utils.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/cpu_region_protect.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_clk.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/clk_ctrl_os.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/hw_random.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/intr_alloc.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/mac_addr.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/periph_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/revision.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/rtc_module.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/regi2c_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_gpio_reserve.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sar_periph_ctrl_common.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/io_mux.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/esp_clk_tree.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/esp_dma_utils.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/gdma_link.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/spi_bus_lock.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/clk_utils.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp_clk_tree_common.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/spi_share_hw_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/adc_share_hw_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_retention.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_modem.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_modes.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_console.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_usb.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_gpio.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_event.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_system_peripheral.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/gdma.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/deprecated/gdma_legacy.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/gdma_sleep_retention.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/gdma_etm.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/esp_async_memcpy.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/dma/async_memcpy_gdma.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_etm.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/pau_regdma.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/regdma_link.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/modem_clock.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/mspi_timing_tuning.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/sleep_wake_stub.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/esp_clock_output.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/power_supply/brownout.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/rtc_clk_init.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/rtc_clk.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/pmu_param.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/pmu_init.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/pmu_sleep.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/rtc_time.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/chip_info.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/ocode_init.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/port/esp32c6/sar_periph_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/lowpower/port/esp32c6/sleep_cpu.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/lowpower/port/esp32c6/sleep_cpu_asm.S", "/Users/ryan/esp/esp-idf/components/esp_hw_support/lowpower/port/esp32c6/sleep_clock.c", "/Users/ryan/esp/esp-idf/components/esp_hw_support/lowpower/port/esp32c6/sleep_modem_state.c" ],
+            "include_dirs": [ "include", "include/soc", "include/soc/esp32c6", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
         },
         "esp_lcd": {
             "alias": "idf::esp_lcd",
@@ -819,8 +819,8 @@
             "priv_reqs": [ "esp_mm", "esp_psram", "esp_pm", "esp_driver_i2s" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_lcd/libesp_lcd.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_common.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_io.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_nt35510.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_ssd1306.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_st7789.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_ops.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/i2c/esp_lcd_panel_io_i2c_v1.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/i2c/esp_lcd_panel_io_i2c_v2.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/spi/esp_lcd_panel_io_spi.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/i80/esp_lcd_panel_io_i2s.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_lcd/libesp_lcd.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_common.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_io.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_nt35510.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_ssd1306.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_st7789.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/src/esp_lcd_panel_ops.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/i2c/esp_lcd_panel_io_i2c_v1.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/i2c/esp_lcd_panel_io_i2c_v2.c", "/Users/ryan/esp/esp-idf/components/esp_lcd/spi/esp_lcd_panel_io_spi.c" ],
             "include_dirs": [ "include", "interface" ]
         },
         "esp_local_ctrl": {
@@ -834,7 +834,7 @@
             "priv_reqs": [ "protobuf-c", "esp_netif" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_local_ctrl/libesp_local_ctrl.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl.c", "/Users/ryan/esp/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl_handler.c", "/Users/ryan/esp/esp-idf/components/esp_local_ctrl/proto-c/esp_local_ctrl.pb-c.c", "/Users/ryan/esp/esp-idf/components/esp_local_ctrl/src/esp_local_ctrl_transport_httpd.c" ],
             "include_dirs": [ "include" ]
         },
@@ -849,8 +849,8 @@
             "priv_reqs": [ "heap", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_mm/libesp_mm.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_mm/esp_mmu_map.c", "/Users/ryan/esp/esp-idf/components/esp_mm/port/esp32/ext_mem_layout.c", "/Users/ryan/esp/esp-idf/components/esp_mm/esp_cache.c", "/Users/ryan/esp/esp-idf/components/esp_mm/cache_esp32.c", "/Users/ryan/esp/esp-idf/components/esp_mm/heap_align_hw.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_mm/libesp_mm.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_mm/esp_mmu_map.c", "/Users/ryan/esp/esp-idf/components/esp_mm/port/esp32c6/ext_mem_layout.c", "/Users/ryan/esp/esp-idf/components/esp_mm/esp_cache.c", "/Users/ryan/esp/esp-idf/components/esp_mm/heap_align_hw.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_netif": {
@@ -864,7 +864,7 @@
             "priv_reqs": [ "esp_netif_stack" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_netif/libesp_netif.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_netif/libesp_netif.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_netif/esp_netif_handlers.c", "/Users/ryan/esp/esp-idf/components/esp_netif/esp_netif_objects.c", "/Users/ryan/esp/esp-idf/components/esp_netif/esp_netif_defaults.c", "/Users/ryan/esp/esp-idf/components/esp_netif/lwip/esp_netif_lwip.c", "/Users/ryan/esp/esp-idf/components/esp_netif/lwip/esp_netif_sntp.c", "/Users/ryan/esp/esp-idf/components/esp_netif/lwip/esp_netif_lwip_defaults.c", "/Users/ryan/esp/esp-idf/components/esp_netif/lwip/netif/wlanif.c", "/Users/ryan/esp/esp-idf/components/esp_netif/lwip/netif/ethernetif.c", "/Users/ryan/esp/esp-idf/components/esp_netif/lwip/netif/esp_pbuf_ref.c" ],
             "include_dirs": [ "include" ]
         },
@@ -894,7 +894,7 @@
             "priv_reqs": [ "esp_system", "spi_flash", "partition_table", "bootloader_support", "app_update" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_partition/libesp_partition.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_partition/libesp_partition.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_partition/partition.c", "/Users/ryan/esp/esp-idf/components/esp_partition/partition_target.c" ],
             "include_dirs": [ "include" ]
         },
@@ -909,9 +909,9 @@
             "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "efuse", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_phy/libesp_phy.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_phy/src/phy_override.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/lib_printf.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/phy_common.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/phy_init.c", "/Users/ryan/esp/esp-idf/components/esp_phy/esp32/phy_init_data.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/btbb_init.c" ],
-            "include_dirs": [ "include", "esp32/include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_phy/libesp_phy.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_phy/src/phy_override.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/lib_printf.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/phy_common.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/phy_init.c", "/Users/ryan/esp/esp-idf/components/esp_phy/esp32c6/phy_init_data.c", "/Users/ryan/esp/esp-idf/components/esp_phy/src/btbb_init.c" ],
+            "include_dirs": [ "include", "esp32c6/include" ]
         },
         "esp_pm": {
             "alias": "idf::esp_pm",
@@ -924,7 +924,7 @@
             "priv_reqs": [ "esp_system", "esp_driver_gpio", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_pm/libesp_pm.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_pm/libesp_pm.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_pm/pm_locks.c", "/Users/ryan/esp/esp-idf/components/esp_pm/pm_trace.c", "/Users/ryan/esp/esp-idf/components/esp_pm/pm_impl.c" ],
             "include_dirs": [ "include" ]
         },
@@ -936,7 +936,7 @@
             "type": "CONFIG_ONLY",
             "lib": "__idf_esp_psram",
             "reqs": [],
-            "priv_reqs": [ "heap", "spi_flash", "esp_mm", "bootloader_support", "esp_driver_spi", "esp_driver_gpio" ],
+            "priv_reqs": [ "heap", "spi_flash", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "",
@@ -954,7 +954,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_ringbuf/libesp_ringbuf.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_ringbuf/ringbuf.c" ],
             "include_dirs": [ "include" ]
         },
@@ -969,9 +969,9 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_rom/libesp_rom.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_print.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_gpio.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S" ],
-            "include_dirs": [ "include", "esp32/include", "esp32/include/esp32", "esp32" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_rom/libesp_rom.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_sys.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_print.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_crc.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_uart.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_efuse.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_gpio.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_hp_regi2c_esp32c6.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_tlsf.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_multi_heap.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_systimer.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_rom/patches/esp_rom_usb_serial.c" ],
+            "include_dirs": [ "include", "esp32c6/include", "esp32c6/include/esp32c6", "esp32c6" ]
         },
         "esp_security": {
             "alias": "idf::esp_security",
@@ -984,8 +984,8 @@
             "priv_reqs": [ "efuse", "esp_hw_support", "esp_system", "esp_timer" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_security/libesp_security.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_security/src/init.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_crypto_lock.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_crypto_periph_clk.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_security/libesp_security.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_security/src/init.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_hmac.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_ds.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_dpa_protection.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_crypto_lock.c", "/Users/ryan/esp/esp-idf/components/esp_security/src/esp_crypto_periph_clk.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_system": {
@@ -999,8 +999,23 @@
             "priv_reqs": [ "spi_flash", "esp_timer", "esp_mm", "bootloader_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_system/libesp_system.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_system/esp_err.c", "/Users/ryan/esp/esp-idf/components/esp_system/crosscore_int.c", "/Users/ryan/esp/esp-idf/components/esp_system/esp_ipc.c", "/Users/ryan/esp/esp-idf/components/esp_system/esp_system_console.c", "/Users/ryan/esp/esp-idf/components/esp_system/freertos_hooks.c", "/Users/ryan/esp/esp-idf/components/esp_system/int_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_system/panic.c", "/Users/ryan/esp/esp-idf/components/esp_system/esp_system.c", "/Users/ryan/esp/esp-idf/components/esp_system/startup.c", "/Users/ryan/esp/esp-idf/components/esp_system/startup_funcs.c", "/Users/ryan/esp/esp-idf/components/esp_system/system_time.c", "/Users/ryan/esp/esp-idf/components/esp_system/stack_check.c", "/Users/ryan/esp/esp-idf/components/esp_system/ubsan.c", "/Users/ryan/esp/esp-idf/components/esp_system/xt_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/cpu_start.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/panic_handler.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/esp_system_chip.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/image_process.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/esp_ipc_isr.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_port.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_routines.S", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_arch.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/panic_handler_asm.S", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_helpers_asm.S", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/xtensa/trax.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32/highint_hdl.S", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32/clk.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32/system_internal.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32/cache_err_int.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_system/libesp_system.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_system/esp_err.c", "/Users/ryan/esp/esp-idf/components/esp_system/crosscore_int.c", "/Users/ryan/esp/esp-idf/components/esp_system/esp_ipc.c", "/Users/ryan/esp/esp-idf/components/esp_system/esp_system_console.c", "/Users/ryan/esp/esp-idf/components/esp_system/freertos_hooks.c", "/Users/ryan/esp/esp-idf/components/esp_system/int_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_system/panic.c", "/Users/ryan/esp/esp-idf/components/esp_system/esp_system.c", "/Users/ryan/esp/esp-idf/components/esp_system/startup.c", "/Users/ryan/esp/esp-idf/components/esp_system/startup_funcs.c", "/Users/ryan/esp/esp-idf/components/esp_system/system_time.c", "/Users/ryan/esp/esp-idf/components/esp_system/stack_check.c", "/Users/ryan/esp/esp-idf/components/esp_system/ubsan.c", "/Users/ryan/esp/esp-idf/components/esp_system/xt_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c", "/Users/ryan/esp/esp-idf/components/esp_system/task_wdt/task_wdt_impl_timergroup.c", "/Users/ryan/esp/esp-idf/components/esp_system/systick_etm.c", "/Users/ryan/esp/esp-idf/components/esp_system/hw_stack_guard.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/cpu_start.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/panic_handler.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/esp_system_chip.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/image_process.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/riscv/expression_with_stack.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/riscv/panic_arch.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/riscv/debug_helpers.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/arch/riscv/debug_stubs.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32c6/clk.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32c6/reset_reason.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32c6/system_internal.c", "/Users/ryan/esp/esp-idf/components/esp_system/port/soc/esp32c6/cache_err_int.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_tee": {
+            "alias": "idf::esp_tee",
+            "target": "___idf_esp_tee",
+            "prefix": "idf",
+            "dir": "/Users/ryan/esp/esp-idf/components/esp_tee",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_tee",
+            "reqs": [],
+            "priv_reqs": [ "efuse", "esp_security", "esp_system", "spi_flash" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
             "include_dirs": [ "include" ]
         },
         "esp_timer": {
@@ -1014,8 +1029,8 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_timer/libesp_timer.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_init.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/system_time.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_impl_lac.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_timer/libesp_timer.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_init.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/ets_timer_legacy.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/system_time.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_impl_common.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c", "/Users/ryan/esp/esp-idf/components/esp_timer/src/esp_timer_etm.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_vfs_console": {
@@ -1029,7 +1044,7 @@
             "priv_reqs": [ "vfs", "esp_driver_uart", "esp_driver_usb_serial_jtag" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_vfs_console/libesp_vfs_console.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/esp_vfs_console/vfs_console.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1044,8 +1059,8 @@
             "priv_reqs": [ "esptool_py", "esp_pm", "esp_timer", "nvs_flash", "wpa_supplicant", "hal", "lwip", "esp_coex" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/esp_wifi/libesp_wifi.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_wifi/src/lib_printf.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/mesh_event.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/smartconfig.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_init.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_default.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_netif.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/esp32/esp_adapter.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/regulatory/esp_wifi_regulatory.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/esp_wifi/libesp_wifi.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/esp_wifi/src/lib_printf.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/mesh_event.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/smartconfig.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_init.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_default.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_netif.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/wifi_default_ap.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/esp32c6/esp_adapter.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/regulatory/esp_wifi_regulatory.c", "/Users/ryan/esp/esp-idf/components/esp_wifi/src/smartconfig_ack.c" ],
             "include_dirs": [ "include", "include/local", "wifi_apps/include", "wifi_apps/nan_app/include" ]
         },
         "espcoredump": {
@@ -1059,9 +1074,9 @@
             "priv_reqs": [ "esp_partition", "spi_flash", "bootloader_support", "mbedtls", "esp_rom", "soc", "esp_system", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/espcoredump/libespcoredump.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_init.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_common.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_flash.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_uart.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_elf.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_binary.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_sha.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_crc.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/port/xtensa/core_dump_port.c" ],
-            "include_dirs": [ "include", "include/port/xtensa" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/espcoredump/libespcoredump.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_init.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_common.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_flash.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_uart.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_elf.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_binary.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_sha.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/core_dump_crc.c", "/Users/ryan/esp/esp-idf/components/espcoredump/src/port/riscv/core_dump_port.c" ],
+            "include_dirs": [ "include", "include/port/riscv" ]
         },
         "esptool_py": {
             "alias": "idf::esptool_py",
@@ -1089,7 +1104,7 @@
             "priv_reqs": [ "vfs", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/fatfs/libfatfs.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/fatfs/libfatfs.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/fatfs/diskio/diskio.c", "/Users/ryan/esp/esp-idf/components/fatfs/diskio/diskio_rawflash.c", "/Users/ryan/esp/esp-idf/components/fatfs/diskio/diskio_wl.c", "/Users/ryan/esp/esp-idf/components/fatfs/src/ff.c", "/Users/ryan/esp/esp-idf/components/fatfs/src/ffunicode.c", "/Users/ryan/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c", "/Users/ryan/esp/esp-idf/components/fatfs/diskio/diskio_sdmmc.c", "/Users/ryan/esp/esp-idf/components/fatfs/vfs/vfs_fat.c", "/Users/ryan/esp/esp-idf/components/fatfs/vfs/vfs_fat_sdmmc.c", "/Users/ryan/esp/esp-idf/components/fatfs/vfs/vfs_fat_spiflash.c" ],
             "include_dirs": [ "diskio", "src", "vfs" ]
         },
@@ -1104,9 +1119,9 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/freertos/libfreertos.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/freertos/heap_idf.c", "/Users/ryan/esp/esp-idf/components/freertos/app_startup.c", "/Users/ryan/esp/esp-idf/components/freertos/port_common.c", "/Users/ryan/esp/esp-idf/components/freertos/port_systick.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c", "/Users/ryan/esp/esp-idf/components/freertos/esp_additions/freertos_compatibility.c", "/Users/ryan/esp/esp-idf/components/freertos/esp_additions/idf_additions_event_groups.c", "/Users/ryan/esp/esp-idf/components/freertos/esp_additions/idf_additions.c" ],
-            "include_dirs": [ "config/include", "config/include/freertos", "config/xtensa/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "FreeRTOS-Kernel/portable/xtensa/include/freertos", "esp_additions/include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/freertos/libfreertos.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/freertos/heap_idf.c", "/Users/ryan/esp/esp-idf/components/freertos/app_startup.c", "/Users/ryan/esp/esp-idf/components/freertos/port_common.c", "/Users/ryan/esp/esp-idf/components/freertos/port_systick.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/list.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/timers.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/stream_buffer.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c", "/Users/ryan/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/portasm.S", "/Users/ryan/esp/esp-idf/components/freertos/esp_additions/freertos_compatibility.c", "/Users/ryan/esp/esp-idf/components/freertos/esp_additions/idf_additions_event_groups.c", "/Users/ryan/esp/esp-idf/components/freertos/esp_additions/idf_additions.c" ],
+            "include_dirs": [ "config/include", "config/include/freertos", "config/riscv/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/riscv/include", "FreeRTOS-Kernel/portable/riscv/include/freertos", "esp_additions/include" ]
         },
         "hal": {
             "alias": "idf::hal",
@@ -1119,9 +1134,9 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/hal/libhal.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/hal/hal_utils.c", "/Users/ryan/esp/esp-idf/components/hal/mpu_hal.c", "/Users/ryan/esp/esp-idf/components/hal/efuse_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32/efuse_hal.c", "/Users/ryan/esp/esp-idf/components/hal/wdt_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/mmu_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32/cache_hal_esp32.c", "/Users/ryan/esp/esp-idf/components/hal/color_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/esp32/clk_tree_hal.c", "/Users/ryan/esp/esp-idf/components/hal/uart_hal.c", "/Users/ryan/esp/esp-idf/components/hal/uart_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/gpio_hal.c", "/Users/ryan/esp/esp-idf/components/hal/rtc_io_hal.c", "/Users/ryan/esp/esp-idf/components/hal/timer_hal.c", "/Users/ryan/esp/esp-idf/components/hal/ledc_hal.c", "/Users/ryan/esp/esp-idf/components/hal/ledc_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/i2c_hal.c", "/Users/ryan/esp/esp-idf/components/hal/i2c_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/rmt_hal.c", "/Users/ryan/esp/esp-idf/components/hal/pcnt_hal.c", "/Users/ryan/esp/esp-idf/components/hal/mcpwm_hal.c", "/Users/ryan/esp/esp-idf/components/hal/twai_hal_sja1000.c", "/Users/ryan/esp/esp-idf/components/hal/i2s_hal.c", "/Users/ryan/esp/esp-idf/components/hal/sdm_hal.c", "/Users/ryan/esp/esp-idf/components/hal/sdmmc_hal.c", "/Users/ryan/esp/esp-idf/components/hal/emac_hal.c", "/Users/ryan/esp/esp-idf/components/hal/adc_hal_common.c", "/Users/ryan/esp/esp-idf/components/hal/adc_oneshot_hal.c", "/Users/ryan/esp/esp-idf/components/hal/adc_hal.c", "/Users/ryan/esp/esp-idf/components/hal/mpi_hal.c", "/Users/ryan/esp/esp-idf/components/hal/sha_hal.c", "/Users/ryan/esp/esp-idf/components/hal/aes_hal.c", "/Users/ryan/esp/esp-idf/components/hal/brownout_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/spi_slave_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_slave_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/sdio_slave_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32/touch_sensor_hal.c", "/Users/ryan/esp/esp-idf/components/hal/touch_sensor_hal.c", "/Users/ryan/esp/esp-idf/components/hal/touch_sens_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32/gpio_hal_workaround.c" ],
-            "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/hal/libhal.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/hal/hal_utils.c", "/Users/ryan/esp/esp-idf/components/hal/efuse_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32c6/efuse_hal.c", "/Users/ryan/esp/esp-idf/components/hal/lp_timer_hal.c", "/Users/ryan/esp/esp-idf/components/hal/mmu_hal.c", "/Users/ryan/esp/esp-idf/components/hal/cache_hal.c", "/Users/ryan/esp/esp-idf/components/hal/color_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_encrypt_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/esp32c6/clk_tree_hal.c", "/Users/ryan/esp/esp-idf/components/hal/uart_hal.c", "/Users/ryan/esp/esp-idf/components/hal/uart_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/gpio_hal.c", "/Users/ryan/esp/esp-idf/components/hal/rtc_io_hal.c", "/Users/ryan/esp/esp-idf/components/hal/timer_hal.c", "/Users/ryan/esp/esp-idf/components/hal/ledc_hal.c", "/Users/ryan/esp/esp-idf/components/hal/ledc_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/i2c_hal.c", "/Users/ryan/esp/esp-idf/components/hal/i2c_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/rmt_hal.c", "/Users/ryan/esp/esp-idf/components/hal/pcnt_hal.c", "/Users/ryan/esp/esp-idf/components/hal/mcpwm_hal.c", "/Users/ryan/esp/esp-idf/components/hal/uhci_hal.c", "/Users/ryan/esp/esp-idf/components/hal/twai_hal_sja1000.c", "/Users/ryan/esp/esp-idf/components/hal/gdma_hal_top.c", "/Users/ryan/esp/esp-idf/components/hal/gdma_hal_ahb_v1.c", "/Users/ryan/esp/esp-idf/components/hal/i2s_hal.c", "/Users/ryan/esp/esp-idf/components/hal/sdm_hal.c", "/Users/ryan/esp/esp-idf/components/hal/etm_hal.c", "/Users/ryan/esp/esp-idf/components/hal/parlio_hal.c", "/Users/ryan/esp/esp-idf/components/hal/adc_hal_common.c", "/Users/ryan/esp/esp-idf/components/hal/adc_oneshot_hal.c", "/Users/ryan/esp/esp-idf/components/hal/adc_hal.c", "/Users/ryan/esp/esp-idf/components/hal/ecc_hal.c", "/Users/ryan/esp/esp-idf/components/hal/mpi_hal.c", "/Users/ryan/esp/esp-idf/components/hal/sha_hal.c", "/Users/ryan/esp/esp-idf/components/hal/aes_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32c6/modem_clock_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32c6/pau_hal.c", "/Users/ryan/esp/esp-idf/components/hal/brownout_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/spi_slave_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_slave_hal_iram.c", "/Users/ryan/esp/esp-idf/components/hal/spi_slave_hd_hal.c", "/Users/ryan/esp/esp-idf/components/hal/spi_flash_hal_gpspi.c", "/Users/ryan/esp/esp-idf/components/hal/sdio_slave_hal.c", "/Users/ryan/esp/esp-idf/components/hal/esp32c6/pmu_hal.c", "/Users/ryan/esp/esp-idf/components/hal/apm_hal.c", "/Users/ryan/esp/esp-idf/components/hal/hmac_hal.c", "/Users/ryan/esp/esp-idf/components/hal/ds_hal.c", "/Users/ryan/esp/esp-idf/components/hal/usb_serial_jtag_hal.c" ],
+            "include_dirs": [ "platform_port/include", "esp32c6/include", "include" ]
         },
         "heap": {
             "alias": "idf::heap",
@@ -1134,8 +1149,8 @@
             "priv_reqs": [ "soc" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/heap/libheap.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/heap/heap_caps_base.c", "/Users/ryan/esp/esp-idf/components/heap/heap_caps.c", "/Users/ryan/esp/esp-idf/components/heap/heap_caps_init.c", "/Users/ryan/esp/esp-idf/components/heap/multi_heap.c", "/Users/ryan/esp/esp-idf/components/heap/tlsf/tlsf.c", "/Users/ryan/esp/esp-idf/components/heap/port/memory_layout_utils.c", "/Users/ryan/esp/esp-idf/components/heap/port/esp32/memory_layout.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/heap/libheap.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/heap/heap_caps_base.c", "/Users/ryan/esp/esp-idf/components/heap/heap_caps.c", "/Users/ryan/esp/esp-idf/components/heap/heap_caps_init.c", "/Users/ryan/esp/esp-idf/components/heap/multi_heap.c", "/Users/ryan/esp/esp-idf/components/heap/port/memory_layout_utils.c", "/Users/ryan/esp/esp-idf/components/heap/port/esp32c6/memory_layout.c" ],
             "include_dirs": [ "include", "tlsf" ]
         },
         "http_parser": {
@@ -1149,7 +1164,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/http_parser/libhttp_parser.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/http_parser/libhttp_parser.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/http_parser/http_parser.c" ],
             "include_dirs": [ "." ]
         },
@@ -1166,21 +1181,21 @@
             "managed_priv_reqs": [],
             "file": "",
             "sources": [],
-            "include_dirs": [ "include", "include/esp32" ]
+            "include_dirs": [ "include", "include/esp32c6" ]
         },
         "ieee802154": {
             "alias": "idf::ieee802154",
             "target": "___idf_ieee802154",
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/ieee802154",
-            "type": "CONFIG_ONLY",
+            "type": "LIBRARY",
             "lib": "__idf_ieee802154",
             "reqs": [ "esp_coex" ],
             "priv_reqs": [ "esp_phy", "esp_timer", "soc", "hal", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "",
-            "sources": [],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/ieee802154/libieee802154.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/ieee802154/esp_ieee802154.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_ack.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_dev.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_event.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_frame.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_pib.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_util.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_sec.c", "/Users/ryan/esp/esp-idf/components/ieee802154/driver/esp_ieee802154_timer.c" ],
             "include_dirs": [ "include" ]
         },
         "json": {
@@ -1194,7 +1209,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/json/libjson.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/json/libjson.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/json/cJSON/cJSON.c", "/Users/ryan/esp/esp-idf/components/json/cJSON/cJSON_Utils.c" ],
             "include_dirs": [ "cJSON" ]
         },
@@ -1209,7 +1224,7 @@
             "priv_reqs": [ "hal", "soc", "esp_hw_support" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/log/liblog.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/log/liblog.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/log/src/os/log_timestamp.c", "/Users/ryan/esp/esp-idf/components/log/src/log_timestamp_common.c", "/Users/ryan/esp/esp-idf/components/log/src/os/log_lock.c", "/Users/ryan/esp/esp-idf/components/log/src/buffer/log_buffers.c", "/Users/ryan/esp/esp-idf/components/log/src/os/util.c", "/Users/ryan/esp/esp-idf/components/log/src/util.c", "/Users/ryan/esp/esp-idf/components/log/src/log_format_text.c", "/Users/ryan/esp/esp-idf/components/log/src/log_print.c", "/Users/ryan/esp/esp-idf/components/log/src/log.c", "/Users/ryan/esp/esp-idf/components/log/src/os/log_write.c", "/Users/ryan/esp/esp-idf/components/log/src/log_level/log_level.c", "/Users/ryan/esp/esp-idf/components/log/src/log_level/tag_log_level/tag_log_level.c", "/Users/ryan/esp/esp-idf/components/log/src/log_level/tag_log_level/linked_list/log_linked_list.c", "/Users/ryan/esp/esp-idf/components/log/src/log_level/tag_log_level/cache/log_binary_heap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1224,7 +1239,7 @@
             "priv_reqs": [ "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/lwip/liblwip.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/lwip/liblwip.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/lwip/apps/sntp/sntp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/api_lib.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/api_msg.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/err.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/if_api.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/netbuf.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/netdb.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/netifapi.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/sockets.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/api/tcpip.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/apps/sntp/sntp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/apps/netbiosns/netbiosns.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/def.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/dns.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/inet_chksum.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/init.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ip.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/mem.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/memp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/netif.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/pbuf.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/raw.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/stats.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/sys.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/tcp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/tcp_in.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/tcp_out.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/timeouts.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/udp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/autoip.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/dhcp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/etharp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/icmp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/igmp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_napt.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_addr.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv4/ip4_frag.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/dhcp6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ethip6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/icmp6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/inet6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ip6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_addr.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/ip6_frag.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/mld6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/core/ipv6/nd6.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ethernet.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/bridgeif.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/bridgeif_fdb.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/slipif.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/auth.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ccp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/chap-md5.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/chap-new.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/chap_ms.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/demand.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/eap.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ecp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/eui64.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/fsm.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ipcp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ipv6cp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/lcp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/magic.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/mppe.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/multilink.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/ppp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppapi.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppcrypt.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppoe.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppol2tp.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/pppos.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/upap.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/utils.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/vj.c", "/Users/ryan/esp/esp-idf/components/lwip/port/hooks/tcp_isn_default.c", "/Users/ryan/esp/esp-idf/components/lwip/port/hooks/lwip_default_hooks.c", "/Users/ryan/esp/esp-idf/components/lwip/port/debug/lwip_debug.c", "/Users/ryan/esp/esp-idf/components/lwip/port/sockets_ext.c", "/Users/ryan/esp/esp-idf/components/lwip/port/freertos/sys_arch.c", "/Users/ryan/esp/esp-idf/components/lwip/port/if_index.c", "/Users/ryan/esp/esp-idf/components/lwip/port/acd_dhcp_check.c", "/Users/ryan/esp/esp-idf/components/lwip/port/esp32xx/vfs_lwip.c", "/Users/ryan/esp/esp-idf/components/lwip/apps/ping/esp_ping.c", "/Users/ryan/esp/esp-idf/components/lwip/apps/ping/ping.c", "/Users/ryan/esp/esp-idf/components/lwip/apps/ping/ping_sock.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/arc4.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/des.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md4.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/md5.c", "/Users/ryan/esp/esp-idf/components/lwip/lwip/src/netif/ppp/polarssl/sha1.c", "/Users/ryan/esp/esp-idf/components/lwip/apps/dhcpserver/dhcpserver.c" ],
             "include_dirs": [ "include", "include/apps", "include/apps/sntp", "lwip/src/include", "port/include", "port/freertos/include/", "port/esp32xx/include", "port/esp32xx/include/arch", "port/esp32xx/include/sys" ]
         },
@@ -1232,15 +1247,15 @@
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/main",
+            "dir": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/main/libmain.a",
-            "sources": [ "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/main/app_main.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/main/libmain.a",
+            "sources": [ "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/main/app_main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -1254,8 +1269,8 @@
             "priv_reqs": [ "soc", "esp_hw_support", "esp_pm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/mbedtls/libmbedtls.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/x509_crt_bundle.S" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/mbedtls/libmbedtls.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
         },
         "mqtt": {
@@ -1269,7 +1284,7 @@
             "priv_reqs": [ "esp_timer", "http_parser", "esp_hw_support", "heap" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/mqtt/libmqtt.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/mqtt/libmqtt.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c", "/Users/ryan/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/Users/ryan/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/Users/ryan/esp/esp-idf/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
             "include_dirs": [ "/Users/ryan/esp/esp-idf/components/mqtt/esp-mqtt/include" ]
         },
@@ -1284,7 +1299,7 @@
             "priv_reqs": [ "soc", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/newlib/libnewlib.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/newlib/libnewlib.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/newlib/src/init.c", "/Users/ryan/esp/esp-idf/components/newlib/src/abort.c", "/Users/ryan/esp/esp-idf/components/newlib/src/assert.c", "/Users/ryan/esp/esp-idf/components/newlib/src/heap.c", "/Users/ryan/esp/esp-idf/components/newlib/src/locks.c", "/Users/ryan/esp/esp-idf/components/newlib/src/poll.c", "/Users/ryan/esp/esp-idf/components/newlib/src/pthread.c", "/Users/ryan/esp/esp-idf/components/newlib/src/random.c", "/Users/ryan/esp/esp-idf/components/newlib/src/getentropy.c", "/Users/ryan/esp/esp-idf/components/newlib/src/termios.c", "/Users/ryan/esp/esp-idf/components/newlib/src/stdatomic.c", "/Users/ryan/esp/esp-idf/components/newlib/src/time.c", "/Users/ryan/esp/esp-idf/components/newlib/src/sysconf.c", "/Users/ryan/esp/esp-idf/components/newlib/src/realpath.c", "/Users/ryan/esp/esp-idf/components/newlib/src/scandir.c", "/Users/ryan/esp/esp-idf/components/newlib/src/syscalls.c", "/Users/ryan/esp/esp-idf/components/newlib/src/reent_syscalls.c", "/Users/ryan/esp/esp-idf/components/newlib/src/port/esp_time_impl.c", "/Users/ryan/esp/esp-idf/components/newlib/src/flockfile.c", "/Users/ryan/esp/esp-idf/components/newlib/src/reent_init.c", "/Users/ryan/esp/esp-idf/components/newlib/src/newlib_init.c", "/Users/ryan/esp/esp-idf/components/newlib/src/port/esp_time_impl.c" ],
             "include_dirs": [ "platform_include" ]
         },
@@ -1299,7 +1314,7 @@
             "priv_reqs": [ "spi_flash", "newlib" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/nvs_flash/libnvs_flash.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/nvs_flash/libnvs_flash.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_api.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_cxx_api.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_item_hash_list.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_page.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_pagemanager.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_storage.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_handle_simple.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_handle_locked.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_partition.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_partition_lookup.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_partition_manager.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_types.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_platform.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_bootloader.c", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_encrypted_partition.cpp", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_bootloader_aes.c", "/Users/ryan/esp/esp-idf/components/nvs_flash/src/nvs_bootloader_xts_aes.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1314,7 +1329,7 @@
             "priv_reqs": [ "bootloader_support", "efuse", "esp_partition", "nvs_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/nvs_sec_provider/libnvs_sec_provider.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1348,21 +1363,6 @@
             "sources": [],
             "include_dirs": []
         },
-        "perfmon": {
-            "alias": "idf::perfmon",
-            "target": "___idf_perfmon",
-            "prefix": "idf",
-            "dir": "/Users/ryan/esp/esp-idf/components/perfmon",
-            "type": "LIBRARY",
-            "lib": "__idf_perfmon",
-            "reqs": [ "xtensa" ],
-            "priv_reqs": [],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/perfmon/libperfmon.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/perfmon/xtensa_perfmon_access.c", "/Users/ryan/esp/esp-idf/components/perfmon/xtensa_perfmon_apis.c", "/Users/ryan/esp/esp-idf/components/perfmon/xtensa_perfmon_masks.c" ],
-            "include_dirs": [ "include" ]
-        },
         "protobuf-c": {
             "alias": "idf::protobuf-c",
             "target": "___idf_protobuf-c",
@@ -1374,7 +1374,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/protobuf-c/libprotobuf-c.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/protobuf-c/libprotobuf-c.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/protobuf-c/protobuf-c/protobuf-c/protobuf-c.c" ],
             "include_dirs": [ "protobuf-c" ]
         },
@@ -1389,7 +1389,7 @@
             "priv_reqs": [ "protobuf-c", "mbedtls", "console", "esp_http_server", "esp_driver_uart" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/protocomm/libprotocomm.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/protocomm/libprotocomm.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/protocomm/src/common/protocomm.c", "/Users/ryan/esp/esp-idf/components/protocomm/proto-c/constants.pb-c.c", "/Users/ryan/esp/esp-idf/components/protocomm/proto-c/sec0.pb-c.c", "/Users/ryan/esp/esp-idf/components/protocomm/proto-c/sec1.pb-c.c", "/Users/ryan/esp/esp-idf/components/protocomm/proto-c/sec2.pb-c.c", "/Users/ryan/esp/esp-idf/components/protocomm/proto-c/session.pb-c.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/transports/protocomm_console.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/transports/protocomm_httpd.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/security/security0.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/security/security1.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/security/security2.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp.c", "/Users/ryan/esp/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp_mpi.c" ],
             "include_dirs": [ "include/common", "include/security", "include/transports", "include/crypto/srp6a", "proto-c" ]
         },
@@ -1404,8 +1404,23 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/pthread/libpthread.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/pthread/libpthread.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/pthread/pthread.c", "/Users/ryan/esp/esp-idf/components/pthread/pthread_cond_var.c", "/Users/ryan/esp/esp-idf/components/pthread/pthread_local_storage.c", "/Users/ryan/esp/esp-idf/components/pthread/pthread_rwlock.c", "/Users/ryan/esp/esp-idf/components/pthread/pthread_semaphore.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "riscv": {
+            "alias": "idf::riscv",
+            "target": "___idf_riscv",
+            "prefix": "idf",
+            "dir": "/Users/ryan/esp/esp-idf/components/riscv",
+            "type": "LIBRARY",
+            "lib": "__idf_riscv",
+            "reqs": [],
+            "priv_reqs": [ "soc", "hal" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/riscv/libriscv.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/riscv/instruction_decode.c", "/Users/ryan/esp/esp-idf/components/riscv/interrupt.c", "/Users/ryan/esp/esp-idf/components/riscv/rv_utils.c", "/Users/ryan/esp/esp-idf/components/riscv/vectors.S", "/Users/ryan/esp/esp-idf/components/riscv/interrupt_plic.c", "/Users/ryan/esp/esp-idf/components/riscv/vectors_intc.S" ],
             "include_dirs": [ "include" ]
         },
         "rt": {
@@ -1419,7 +1434,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/rt/librt.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/rt/librt.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/rt/FreeRTOS_POSIX_mqueue.c", "/Users/ryan/esp/esp-idf/components/rt/FreeRTOS_POSIX_utils.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1434,7 +1449,7 @@
             "priv_reqs": [ "soc", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/sdmmc/libsdmmc.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/sdmmc/libsdmmc.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/sdmmc/sdmmc_cmd.c", "/Users/ryan/esp/esp-idf/components/sdmmc/sdmmc_common.c", "/Users/ryan/esp/esp-idf/components/sdmmc/sdmmc_init.c", "/Users/ryan/esp/esp-idf/components/sdmmc/sdmmc_io.c", "/Users/ryan/esp/esp-idf/components/sdmmc/sdmmc_mmc.c", "/Users/ryan/esp/esp-idf/components/sdmmc/sdmmc_sd.c", "/Users/ryan/esp/esp-idf/components/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1449,9 +1464,9 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/soc/libsoc.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/soc/lldesc.c", "/Users/ryan/esp/esp-idf/components/soc/dport_access_common.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/interrupts.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/gpio_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/uart_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/dport_access.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/adc_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/emac_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/spi_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/ledc_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/pcnt_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/rmt_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/sdm_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/i2s_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/i2c_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/timer_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/lcd_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/mcpwm_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/mpi_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/sdmmc_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/touch_sensor_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/twai_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/wdt_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/dac_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/rtc_io_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/sdio_slave_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32/power_supply_periph.c" ],
-            "include_dirs": [ "include", "esp32", "esp32/include", "esp32/register" ]
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/soc/libsoc.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/soc/lldesc.c", "/Users/ryan/esp/esp-idf/components/soc/dport_access_common.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/interrupts.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/gpio_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/uart_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/adc_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/dedic_gpio_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/etm_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/gdma_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/spi_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/ledc_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/pcnt_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/rmt_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/sdm_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/i2s_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/i2c_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/temperature_sensor_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/timer_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/parlio_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/mcpwm_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/mpi_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/twai_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/wdt_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/ieee802154_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/rtc_io_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/sdio_slave_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/system_retention_periph.c", "/Users/ryan/esp/esp-idf/components/soc/esp32c6/power_supply_periph.c" ],
+            "include_dirs": [ "include", "esp32c6", "esp32c6/include", "esp32c6/register" ]
         },
         "spi_flash": {
             "alias": "idf::spi_flash",
@@ -1464,7 +1479,7 @@
             "priv_reqs": [ "bootloader_support", "app_update", "soc", "esp_mm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/spi_flash/libspi_flash.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/spi_flash/libspi_flash.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/spi_flash/flash_brownout_hook.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_drivers.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_generic.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_issi.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_mxic.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_gd.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_winbond.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_boya.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_chip_th.c", "/Users/ryan/esp/esp-idf/components/spi_flash/memspi_host_driver.c", "/Users/ryan/esp/esp-idf/components/spi_flash/cache_utils.c", "/Users/ryan/esp/esp-idf/components/spi_flash/flash_mmap.c", "/Users/ryan/esp/esp-idf/components/spi_flash/flash_ops.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_wrap.c", "/Users/ryan/esp/esp-idf/components/spi_flash/esp_flash_api.c", "/Users/ryan/esp/esp-idf/components/spi_flash/esp_flash_spi_init.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_os_func_app.c", "/Users/ryan/esp/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1479,7 +1494,7 @@
             "priv_reqs": [ "bootloader_support", "esptool_py", "vfs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/spiffs/libspiffs.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/spiffs/libspiffs.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/spiffs/spiffs_api.c", "/Users/ryan/esp/esp-idf/components/spiffs/spiffs/src/spiffs_cache.c", "/Users/ryan/esp/esp-idf/components/spiffs/spiffs/src/spiffs_check.c", "/Users/ryan/esp/esp-idf/components/spiffs/spiffs/src/spiffs_gc.c", "/Users/ryan/esp/esp-idf/components/spiffs/spiffs/src/spiffs_hydrogen.c", "/Users/ryan/esp/esp-idf/components/spiffs/spiffs/src/spiffs_nucleus.c", "/Users/ryan/esp/esp-idf/components/spiffs/esp_spiffs.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1494,7 +1509,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/tcp_transport/libtcp_transport.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/tcp_transport/libtcp_transport.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/tcp_transport/transport.c", "/Users/ryan/esp/esp-idf/components/tcp_transport/transport_ssl.c", "/Users/ryan/esp/esp-idf/components/tcp_transport/transport_internal.c", "/Users/ryan/esp/esp-idf/components/tcp_transport/transport_socks_proxy.c", "/Users/ryan/esp/esp-idf/components/tcp_transport/transport_ws.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1524,7 +1539,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/unity/libunity.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/unity/libunity.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/unity/unity/src/unity.c", "/Users/ryan/esp/esp-idf/components/unity/unity_compat.c", "/Users/ryan/esp/esp-idf/components/unity/unity_runner.c", "/Users/ryan/esp/esp-idf/components/unity/unity_utils_freertos.c", "/Users/ryan/esp/esp-idf/components/unity/unity_utils_cache.c", "/Users/ryan/esp/esp-idf/components/unity/unity_utils_memory.c", "/Users/ryan/esp/esp-idf/components/unity/unity_port_esp32.c", "/Users/ryan/esp/esp-idf/components/unity/port/esp/unity_utils_memory_esp.c" ],
             "include_dirs": [ "include", "unity/src" ]
         },
@@ -1554,7 +1569,7 @@
             "priv_reqs": [ "esp_timer", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_vfs_console" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/vfs/libvfs.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/vfs/libvfs.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/vfs/vfs.c", "/Users/ryan/esp/esp-idf/components/vfs/vfs_eventfd.c", "/Users/ryan/esp/esp-idf/components/vfs/vfs_semihost.c", "/Users/ryan/esp/esp-idf/components/vfs/nullfs.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1569,7 +1584,7 @@
             "priv_reqs": [ "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/wear_levelling/libwear_levelling.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/wear_levelling/libwear_levelling.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/wear_levelling/Partition.cpp", "/Users/ryan/esp/esp-idf/components/wear_levelling/SPI_Flash.cpp", "/Users/ryan/esp/esp-idf/components/wear_levelling/WL_Ext_Perf.cpp", "/Users/ryan/esp/esp-idf/components/wear_levelling/WL_Ext_Safe.cpp", "/Users/ryan/esp/esp-idf/components/wear_levelling/WL_Flash.cpp", "/Users/ryan/esp/esp-idf/components/wear_levelling/crc32.cpp", "/Users/ryan/esp/esp-idf/components/wear_levelling/wear_levelling.cpp" ],
             "include_dirs": [ "include" ]
         },
@@ -1584,7 +1599,7 @@
             "priv_reqs": [ "protobuf-c", "bt", "json", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/wifi_provisioning/libwifi_provisioning.a",
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/wifi_provisioning/libwifi_provisioning.a",
             "sources": [ "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/wifi_config.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/wifi_scan.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/wifi_ctrl.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/manager.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/handlers.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/scheme_console.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_config.pb-c.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_scan.pb-c.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_ctrl.pb-c.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/proto-c/wifi_constants.pb-c.c", "/Users/ryan/esp/esp-idf/components/wifi_provisioning/src/scheme_softap.c" ],
             "include_dirs": [ "include" ]
         },
@@ -1599,24 +1614,9 @@
             "priv_reqs": [ "mbedtls", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/port/eloop.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/sae.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/json.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
+            "file": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/esp-idf/wpa_supplicant/libwpa_supplicant.a",
+            "sources": [ "/Users/ryan/esp/esp-idf/components/wpa_supplicant/port/os_xtensa.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/port/eloop.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/ap_config.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/ieee802_1x.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/wpa_auth.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/wpa_auth_ie.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/pmksa_cache_auth.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/sta_info.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/ieee802_11.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/ap/comeback_token.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/sae.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/dragonfly.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/wpa_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/bitfield.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-siv.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-kdf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/ccmp.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-gcm.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/crypto_ops.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_group5.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/dh_groups.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/ms_funcs.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-tlsprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-tlsprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha384-tlsprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha256-prf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-prf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha384-prf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/md4-internal.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/sha1-tprf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_common/eap_wsc_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/ieee802_11_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/chap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_mschapv2.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_peap_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_tls_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_ttls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/mschapv2.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap_fast_pac.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/pmksa_cache.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa_ie.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/base64.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/ext_password.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/uuid.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/wpabuf.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/wpa_debug.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/utils/json.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_build.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_parse.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_attr_process.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_dev_attr.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/wps/wps_enrollee.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/common/sae_pk.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_eap_client.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa2_api_port.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa_main.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpas_glue.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_common.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wps.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_wpa3.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_owe.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/esp_hostap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/tls_mbedtls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/crypto_mbedtls-ec.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpsk.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/rc4.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/des-internal.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src/crypto/fastpbkdf2.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-unwrap.c", "/Users/ryan/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-ccm.c" ],
             "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
-        },
-        "xtensa": {
-            "alias": "idf::xtensa",
-            "target": "___idf_xtensa",
-            "prefix": "idf",
-            "dir": "/Users/ryan/esp/esp-idf/components/xtensa",
-            "type": "LIBRARY",
-            "lib": "__idf_xtensa",
-            "reqs": [],
-            "priv_reqs": [],
-            "managed_reqs": [],
-            "managed_priv_reqs": [],
-            "file": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/esp-idf/xtensa/libxtensa.a",
-            "sources": [ "/Users/ryan/esp/esp-idf/components/xtensa/eri.c", "/Users/ryan/esp/esp-idf/components/xtensa/xt_trax.c", "/Users/ryan/esp/esp-idf/components/xtensa/xtensa_context.S", "/Users/ryan/esp/esp-idf/components/xtensa/xtensa_intr_asm.S", "/Users/ryan/esp/esp-idf/components/xtensa/xtensa_intr.c", "/Users/ryan/esp/esp-idf/components/xtensa/xtensa_vectors.S" ],
-            "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
         }
     },
     "all_component_info" : {
@@ -1726,7 +1726,7 @@
             "priv_reqs": [ "efuse", "esp_timer", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include", "touch_sensor/esp32/include" ]
+            "include_dirs": [ "deprecated", "i2c/include", "touch_sensor/include", "twai/include" ]
         },
         "efuse": {
             "alias": "idf::efuse",
@@ -1738,7 +1738,7 @@
             "priv_reqs": [ "bootloader_support", "soc", "spi_flash", "esp_system", "esp_partition", "esp_app_format" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "esp32/include" ]
+            "include_dirs": [ "include", "esp32c6/include" ]
         },
         "esp-tls": {
             "alias": "idf::esp-tls",
@@ -1759,10 +1759,10 @@
             "dir": "/Users/ryan/esp/esp-idf/components/esp_adc",
             "lib": "__idf_esp_adc",
             "reqs": [],
-            "priv_reqs": [ "esp_driver_gpio", "efuse", "esp_pm", "esp_ringbuf", "esp_mm", "esp_driver_i2s", "driver" ],
+            "priv_reqs": [ "esp_driver_gpio", "efuse", "esp_pm", "esp_ringbuf", "esp_mm", "driver" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "interface", "esp32/include", "deprecated/include" ]
+            "include_dirs": [ "include", "interface", "esp32c6/include", "deprecated/include" ]
         },
         "esp_app_format": {
             "alias": "idf::esp_app_format",
@@ -1855,7 +1855,7 @@
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_dac",
             "lib": "__idf_esp_driver_dac",
             "reqs": [],
-            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_i2s" ],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "./include" ]
@@ -2083,10 +2083,10 @@
             "dir": "/Users/ryan/esp/esp-idf/components/esp_driver_touch_sens",
             "lib": "__idf_esp_driver_touch_sens",
             "reqs": [],
-            "priv_reqs": [ "esp_driver_gpio", "esp_timer" ],
+            "priv_reqs": [ "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "hw_ver1/include" ]
+            "include_dirs": []
         },
         "esp_driver_tsens": {
             "alias": "idf::esp_driver_tsens",
@@ -2239,10 +2239,10 @@
             "dir": "/Users/ryan/esp/esp-idf/components/esp_hw_support",
             "lib": "__idf_esp_hw_support",
             "reqs": [ "soc" ],
-            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
+            "priv_reqs": [ "efuse", "spi_flash", "bootloader_support", "esp_security", "hal", "esp_driver_gpio", "esp_timer", "esp_pm", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "include/soc", "include/soc/esp32", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
+            "include_dirs": [ "include", "include/soc", "include/soc/esp32c6", "dma/include", "ldo/include", "debug_probe/include", "mspi_timing_tuning/include", "mspi_timing_tuning/tuning_scheme_impl/include", "power_supply/include" ]
         },
         "esp_lcd": {
             "alias": "idf::esp_lcd",
@@ -2326,7 +2326,7 @@
             "priv_reqs": [ "nvs_flash", "esp_driver_gpio", "efuse", "esp_timer", "esp_wifi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "esp32/include" ]
+            "include_dirs": [ "include", "esp32c6/include" ]
         },
         "esp_pm": {
             "alias": "idf::esp_pm",
@@ -2347,7 +2347,7 @@
             "dir": "/Users/ryan/esp/esp-idf/components/esp_psram",
             "lib": "__idf_esp_psram",
             "reqs": [],
-            "priv_reqs": [ "heap", "spi_flash", "esp_mm", "bootloader_support", "esp_driver_spi", "esp_driver_gpio" ],
+            "priv_reqs": [ "heap", "spi_flash", "esp_mm" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -2374,7 +2374,7 @@
             "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "esp32/include", "esp32/include/esp32", "esp32" ]
+            "include_dirs": [ "include", "esp32c6/include", "esp32c6/include/esp32c6", "esp32c6" ]
         },
         "esp_security": {
             "alias": "idf::esp_security",
@@ -2407,7 +2407,7 @@
             "dir": "/Users/ryan/esp/esp-idf/components/esp_tee",
             "lib": "__idf_esp_tee",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "efuse", "esp_security", "esp_system", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -2458,7 +2458,7 @@
             "priv_reqs": [ "esp_partition", "spi_flash", "bootloader_support", "mbedtls", "esp_rom", "soc", "esp_system", "esp_driver_gpio" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "include/port/xtensa" ]
+            "include_dirs": [ "include", "include/port/riscv" ]
         },
         "esptool_py": {
             "alias": "idf::esptool_py",
@@ -2494,7 +2494,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "config/include", "config/include/freertos", "config/xtensa/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/xtensa/include", "FreeRTOS-Kernel/portable/xtensa/include/freertos", "esp_additions/include" ]
+            "include_dirs": [ "config/include", "config/include/freertos", "config/riscv/include", "FreeRTOS-Kernel/include", "FreeRTOS-Kernel/portable/riscv/include", "FreeRTOS-Kernel/portable/riscv/include/freertos", "esp_additions/include" ]
         },
         "hal": {
             "alias": "idf::hal",
@@ -2506,7 +2506,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "platform_port/include", "esp32/include", "include" ]
+            "include_dirs": [ "platform_port/include", "esp32c6/include", "include" ]
         },
         "heap": {
             "alias": "idf::heap",
@@ -2542,7 +2542,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "include/esp32" ]
+            "include_dirs": [ "include", "include/esp32c6" ]
         },
         "ieee802154": {
             "alias": "idf::ieee802154",
@@ -2694,11 +2694,11 @@
             "prefix": "idf",
             "dir": "/Users/ryan/esp/esp-idf/components/perfmon",
             "lib": "__idf_perfmon",
-            "reqs": [ "xtensa" ],
+            "reqs": [],
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": []
         },
         "protobuf-c": {
             "alias": "idf::protobuf-c",
@@ -2743,7 +2743,7 @@
             "dir": "/Users/ryan/esp/esp-idf/components/riscv",
             "lib": "__idf_riscv",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "soc", "hal" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]
@@ -2782,7 +2782,7 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include", "esp32", "esp32/include", "esp32/register" ]
+            "include_dirs": [ "include", "esp32c6", "esp32c6/include", "esp32c6/register" ]
         },
         "spi_flash": {
             "alias": "idf::spi_flash",
@@ -2926,13 +2926,13 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "esp32/include", "include", "deprecated_include" ]
+            "include_dirs": [ "include", "port/include", "esp_supplicant/include" ]
         },
         "main": {
             "alias": "idf::main",
             "target": "___idf_main",
             "prefix": "idf",
-            "dir": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/main",
+            "dir": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/main",
             "lib": "__idf_main",
             "reqs": [],
             "priv_reqs": [],
@@ -2943,10 +2943,10 @@
     },
     "debug_prefix_map_gdbinit": "",
     "gdbinit_files": {
-        "01_symbols": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/gdbinit/symbols",
-        "02_prefix_map": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/gdbinit/prefix_map",
-        "03_py_extensions": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/gdbinit/py_extensions",
-        "04_connect": "/Users/ryan/esp/esp-csi/examples/get-started/csi_send/build/gdbinit/connect"
+        "01_symbols": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/gdbinit/symbols",
+        "02_prefix_map": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/gdbinit/prefix_map",
+        "03_py_extensions": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/gdbinit/py_extensions",
+        "04_connect": "/Users/ryan/Projects/CSI-Analysis/graphing/csi_send/build/gdbinit/connect"
     },
-    "debug_arguments_openocd": "-f board/esp32-wrover-kit-3.3v.cfg"
+    "debug_arguments_openocd": "-f board/esp32c6-builtin.cfg"
 }
