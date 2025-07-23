@@ -25,7 +25,7 @@ WORKDIR /csi_ros
 RUN . /opt/ros/humble/setup.sh && \
     colcon build --packages-select csi_ros --install-base install
 
-COPY ../exec/entrypoint.sh /entrypoint.sh
+COPY exec/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
