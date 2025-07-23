@@ -9,6 +9,6 @@ services:
       - /dev/ttyHS2:/dev/ttyHS2
     volumes:
       - /dev/ttyHS2:/dev/ttyHS2
-      - ../csi_ros:/ros2_ws/csi_ros
+      - ../src:/csi_ros
     tty: true
     stdin_open: true

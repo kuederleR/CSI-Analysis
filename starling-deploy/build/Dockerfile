@@ -19,6 +19,6 @@ COPY py-requirements.txt /tmp/py-requirements.txt
 RUN pip3 install -r /tmp/py-requirements.txt && \
     rm /tmp/py-requirements.txt
 
-WORKDIR /ros2_ws
+WORKDIR /csi_ros
 
 CMD ["bash"]
