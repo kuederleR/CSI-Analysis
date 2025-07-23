@@ -21,4 +21,11 @@ RUN pip3 install -r /tmp/py-requirements.txt && \
 
 WORKDIR /csi_ros
 
-CMD ["bash"]
+# Build ROS2 package
+RUN . /opt/ros/humble/setup.sh && \
+    colcon build --packages-select csi_ros --install-base install
+
+COPY ../exec/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
