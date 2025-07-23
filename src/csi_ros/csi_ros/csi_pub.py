@@ -19,7 +19,7 @@ class CSIPublisher(Node):
         msg.channel = int(data.meta['channel'])
         msg.num_subcarriers = len(data.amplitude)
 
-        msg.csi_complex = [float(x) for x in data.csi_raw_data]
+        msg.csi_complex = [float(x) for x in data.raw]
         msg.amplitude = [float(x) for x in data.amplitude]
         msg.phase = [float(x) for x in data.phase]
 
