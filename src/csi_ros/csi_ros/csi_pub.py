@@ -27,7 +27,6 @@ class CSIPublisher(Node):
         msg.header.frame_id = "csi_frame"
 
         self.publisher_.publish(msg)
-        self.get_logger().info(f"Published CSI data with RSSI: {data.meta['rssi']}")
 
     def run(self):
         try:
