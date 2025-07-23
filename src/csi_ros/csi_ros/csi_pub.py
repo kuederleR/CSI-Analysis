@@ -14,10 +14,9 @@ class CSIPublisher(Node):
 
     def publish_csi_data(self, data):
         msg = CSI()
-        msg.mac = data.meta['mac']
-        msg.rssi = data.meta['rssi']
-        msg.channel = data.meta['channel']
-        msg.timestamp = data.meta['timestamp']
+        msg.mac = str(data.meta['mac'])
+        msg.rssi = int(data.meta['rssi'])
+        msg.channel = int(data.meta['channel'])
         msg.num_subcarriers = len(data.amplitude)
 
         msg.csi_complex = [float(x) for x in data.csi_raw_data]
