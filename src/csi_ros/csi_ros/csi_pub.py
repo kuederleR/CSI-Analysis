@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from csi_msgs.msg import CSIData
+from wifi_msgs.msg import CSI
 from csi_py.csireader import CSIReader
 
 CSI_SERIAL_PORT = '/dev/ttyHS2'  # Default serial port
@@ -8,12 +8,12 @@ CSI_SERIAL_PORT = '/dev/ttyHS2'  # Default serial port
 class CSIPublisher(Node):
     def __init__(self, port):
         super().__init__('csi_publisher')
-        self.publisher_ = self.create_publisher(CSIData, 'csi_data', 10)
+        self.publisher_ = self.create_publisher(CSI, 'csi_data', 10)
         self.reader = CSIReader(port, data_callback=self.publish_csi_data, rate=20)
         self.get_logger().info(f"CSI Publisher initialized on port {port}")
 
     def publish_csi_data(self, data):
-        msg = CSIData()
+        msg = CSI()
         msg.mac = data.meta['mac']
         msg.rssi = data.meta['rssi']
         msg.channel = data.meta['channel']
