@@ -23,6 +23,9 @@ class CSIPublisher(Node):
         msg.csi_amplitude = [float(x) for x in data.amplitude]
         msg.csi_phase = [float(x) for x in data.phase]
 
+        msg.header.stamp = self.get_clock().now().to_msg()
+        msg.header.frame_id = "csi_frame"
+
         self.publisher_.publish(msg)
         self.get_logger().info(f"Published CSI data with RSSI: {data.meta['rssi']}")
 
