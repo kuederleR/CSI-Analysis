@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  ros2:
+    build:
+      context: ./build
+    network_mode: host
+    privileged: true
+    devices:
+      - /dev/ttyHS2:/dev/ttyHS2
+    volumes:
+      - /dev/ttyHS2:/dev/ttyHS2
+      - ../csi_ros:/ros2_ws/csi_ros
+    tty: true
+    stdin_open: true
