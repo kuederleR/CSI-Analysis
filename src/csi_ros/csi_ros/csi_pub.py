@@ -38,6 +38,9 @@ def main(args=None):
     rclpy.init(args=args)
     port = CSI_SERIAL_PORT
     csi_publisher = CSIPublisher(port)
-    rclpy.spin(csi_publisher)
-    csi_publisher.run()
+    # rclpy.spin(csi_publisher)
+    try:
+        csi_publisher.run()
+    except Exception as e:
+        csi_publisher.get_logger().error(f"Error occurred: {e}")
     rclpy.shutdown()
