@@ -20,8 +20,8 @@ class CSIPublisher(Node):
         msg.num_subcarriers = len(data.amplitude)
 
         msg.csi_complex = [float(x) for x in data.raw]
-        msg.amplitude = [float(x) for x in data.amplitude]
-        msg.phase = [float(x) for x in data.phase]
+        msg.csi_amplitude = [float(x) for x in data.amplitude]
+        msg.csi_phase = [float(x) for x in data.phase]
 
         self.publisher_.publish(msg)
         self.get_logger().info(f"Published CSI data with RSSI: {data.meta['rssi']}")
