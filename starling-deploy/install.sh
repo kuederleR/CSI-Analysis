@@ -16,9 +16,11 @@ After=docker.service
 [Service]
 Type=simple
 WorkingDirectory=$WORKDIR
+ExecStartPre=/bin/sleep 5 # Add a 10-second delay here
 ExecStart=/usr/bin/docker compose up
 ExecStop=/usr/bin/docker compose down
-Restart=always
+Restart=on-failure
+RestartSec=5
 
 [Install]
 WantedBy=multi-user.target
