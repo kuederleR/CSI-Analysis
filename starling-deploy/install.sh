@@ -8,8 +8,10 @@ WORKDIR="$(dirname $(realpath $0))"
 cat <<EOF | sudo tee /etc/systemd/system/$SERVICE_NAME.service
 [Unit]
 Description=CSI ROS2 Docker Compose Service
-After=network.target
-Requires=docker.service
+After=network-online.target
+Requires=network-online.target
+Wants=docker.service
+After=docker.service
 
 [Service]
 Type=simple
