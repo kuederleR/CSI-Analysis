@@ -18,8 +18,20 @@ COPY py-requirements.txt /tmp/py-requirements.txt
 RUN pip3 install -r /tmp/py-requirements.txt && rm /tmp/py-requirements.txt
 
 ARG PX4_MSGS_BRANCH="release/1.14"
-RUN git clone --branch ${PX4_MSGS_BRANCH} https://github.com/PX4/px4_msgs.git external_packages/src/px4_msgs
+RUN mkdir -p external_packages/src
+SHELL ["/bin/bash", "-c"]
+USER root
 
+RUN git clone --branch ${PX4_MSGS_BRANCH} https://github.com/PX4/px4_msgs.git external_packages/src/px4_msgs
+WORKDIR /home/$USERNAME/external_packages
+
+
+RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
+    colcon build --packages-select px4_msgs && \
+    rm -rf external_packages/log external_packages/build
+
+RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /home/root/.bashrc && \
+    echo "source /home/$USERNAME/external_packages/install/setup.bash" >> /home/root/.bashrc
 
 WORKDIR /csi_ros
 
