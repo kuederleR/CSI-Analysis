@@ -17,6 +17,10 @@ RUN apt-get update && \
 COPY py-requirements.txt /tmp/py-requirements.txt
 RUN pip3 install -r /tmp/py-requirements.txt && rm /tmp/py-requirements.txt
 
+ARG PX4_MSGS_BRANCH="release/1.14"
+RUN git clone --branch ${PX4_MSGS_BRANCH} https://github.com/PX4/px4_msgs.git external_packages/src/px4_msgs
+
+
 WORKDIR /csi_ros
 
 COPY exec/entrypoint.sh /entrypoint.sh
