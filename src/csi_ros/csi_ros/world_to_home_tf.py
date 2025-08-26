@@ -7,7 +7,7 @@ from geometry_msgs.msg import TransformStamped
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 import tf2_ros
 from geometry_msgs.msg import Vector3Stamped
-from geometry_msgs.msg import PointStamped
+from geometry_msgs.msg import PointStamped, PoseStamped
 import tf2_geometry_msgs # For transforming geometry messages
 
 class TransformManager(Node):
@@ -18,13 +18,20 @@ class TransformManager(Node):
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
         self.parent_frame = 'world'
-        self.child_frame = 'start_frame'
+        self.child_frame = 'home_frame'
 
         self.home_transform_published = False
         self.home_position = None
         self.home_orientation = None
 
         self.set_home([0.0, 0.0, 0.0], 0.0)  # Default home position and orientation
+
+        self.home_subscriber = self.create_subscription(
+            PoseStamped,
+            'set_starling_home',
+            self.home_pose_callback,
+            10
+        )
 
     def publish_home_transform(self):
         if not self.home_transform_published and self.home_position is not None and self.home_orientation is not None:
@@ -46,7 +53,7 @@ class TransformManager(Node):
             t.transform.rotation.z = orientation_quat_wxyz[3]
             t.transform.rotation.w = orientation_quat_wxyz[0]
 
-            # Reset the tf_buffer and tf_listener to ensure they are fresh
+            # Reset the tf_buffer and tf_listener to clear cache
             self.tf_buffer = tf2_ros.Buffer()
             self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
@@ -77,6 +84,13 @@ class TransformManager(Node):
         self.publish_home_transform()
         self.get_logger().info(f'Home position set to: {position}, orientation set to: {orientation}')
     
+    def home_pose_callback(self, msg: PoseStamped):
+        position = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
+        orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
+        _, _, yaw = quat2euler(orientation[0], orientation[1], orientation[2], orientation[3])
+        yaw_deg = math.degrees(yaw)
+        self.set_home(position, yaw_deg)
+
     def clear(self):
         """
         Clear the home position and orientation.
