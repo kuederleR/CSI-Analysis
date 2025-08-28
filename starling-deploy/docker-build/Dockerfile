@@ -23,7 +23,7 @@ SHELL ["/bin/bash", "-c"]
 USER root
 
 RUN git clone --branch ${PX4_MSGS_BRANCH} https://github.com/PX4/px4_msgs.git /external_packages/src/px4_msgs
-WORKDIR /home/$USERNAME/external_packages
+WORKDIR /external_packages
 
 
 RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
