@@ -6,6 +6,7 @@ from transforms3d.euler import quat2euler, euler2quat # For converting between q
 from geometry_msgs.msg import TransformStamped
 from tf2_ros.static_transform_broadcaster import StaticTransformBroadcaster
 import tf2_ros
+from std_msgs.msg import Bool
 from geometry_msgs.msg import Vector3Stamped
 from geometry_msgs.msg import PointStamped, PoseStamped
 import tf2_geometry_msgs # For transforming geometry messages
@@ -27,7 +28,7 @@ class TransformManager(Node):
         self.set_home([0.0, 0.0, 0.0], 0.0)  # Default home position and orientation
 
         self.home_subscriber = self.create_subscription(
-            PoseStamped,
+            Bool,
             'set_starling_home',
             self.home_pose_callback,
             10
@@ -85,11 +86,27 @@ class TransformManager(Node):
         self.get_logger().info(f'Home position set to: {position}, orientation set to: {orientation}')
     
     def home_pose_callback(self, msg: PoseStamped):
-        position = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
-        orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
-        _, _, yaw = quat2euler(orientation[0], orientation[1], orientation[2], orientation[3])
-        yaw_deg = math.degrees(yaw)
-        self.set_home(position, yaw_deg)
+        odom_source_frame = 'world'
+        odom_target_frame = 'base_link'
+        try:
+            transform = self.tf_buffer.lookup_transform(
+                odom_source_frame,
+                odom_target_frame,
+                rclpy.time.Time(),
+                timeout=rclpy.duration.Duration(seconds=0.1)
+            )
+            transformed_pose = tf2_geometry_msgs.do_transform_pose(msg, transform)
+            position = transformed_pose.transform.translation
+            orientation = transformed_pose.transform.rotation
+
+            # position = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
+            # orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
+            _, _, yaw = quat2euler(orientation[0], orientation[1], orientation[2], orientation[3])
+            yaw_deg = math.degrees(yaw)
+            self.set_home(position, yaw_deg)
+
+        except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
+            self.get_logger().error(f"Error in home_pose_callback transform: {e}")
 
     def clear(self):
         """
