@@ -2,6 +2,7 @@
 set -e
 source /opt/ros/humble/setup.bash
 source /opt/ros2-csi-msgs/install/setup.bash
+source /external_packages/install/setup.bash
 cd /csi_ros
 colcon build --install-base install
 source /csi_ros/install/setup.bash
