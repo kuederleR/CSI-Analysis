@@ -1,2 +1,4 @@
 csi-py
 catkin_pkg
+transforms3d
+scipy
