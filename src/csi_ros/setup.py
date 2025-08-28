@@ -28,6 +28,7 @@ setup(
             "csi_pub = csi_ros.csi_pub:main",
             "static_base_to_wifi_tf = csi_ros.static_base_to_wifi_tf:main",
             "world_to_base_tf = csi_ros.world_to_base_tf:main",
+            "world_to_home_tf = csi_ros.world_to_home_tf:main",
         ],
     },
 )
