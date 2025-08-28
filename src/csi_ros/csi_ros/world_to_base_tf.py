@@ -32,13 +32,13 @@ class OdometryToTFPublisher(Node):
         t.header.stamp = self.get_clock().now().to_msg()
         t.header.frame_id = 'world'
         t.child_frame_id = 'base_link'
-        t.transform.translation.x = msg.position[0]
-        t.transform.translation.y = msg.position[1]
-        t.transform.translation.z = msg.position[2]
-        t.transform.rotation.x = msg.q[0]
-        t.transform.rotation.y = msg.q[1]
-        t.transform.rotation.z = msg.q[2]
-        t.transform.rotation.w = msg.q[3]
+        t.transform.translation.x = float(msg.position[0])
+        t.transform.translation.y = float(msg.position[1])
+        t.transform.translation.z = float(msg.position[2])
+        t.transform.rotation.x = float(msg.q[0])
+        t.transform.rotation.y = float(msg.q[1])
+        t.transform.rotation.z = float(msg.q[2])
+        t.transform.rotation.w = float(msg.q[3])
 
         self.tf_broadcaster.sendTransform(t)
         # self.get_logger().info(f'Published relative transform: {t.child_frame_id} from {t.header.frame_id}')
