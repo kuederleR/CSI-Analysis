@@ -30,8 +30,8 @@ RUN source /opt/ros/$ROS_DISTRO/setup.bash && \
     colcon build --packages-select px4_msgs && \
     rm -rf external_packages/log external_packages/build
 
-RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /home/root/.bashrc && \
-    echo "source /home/$USERNAME/external_packages/install/setup.bash" >> /home/root/.bashrc
+# RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /home/root/.bashrc && \
+#     echo "source /home/$USERNAME/external_packages/install/setup.bash" >> /home/root/.bashrc
 
 WORKDIR /csi_ros
 
