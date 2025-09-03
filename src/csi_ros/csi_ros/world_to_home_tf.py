@@ -100,7 +100,7 @@ class TransformManager(Node):
 
             # position = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
             # orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
-            _, _, yaw = quat2euler(orientation.w, orientation.x, orientation.y, orientation.z)
+            _, _, yaw = quat2euler([orientation.w, orientation.x, orientation.y, orientation.z])
             yaw_deg = math.degrees(yaw)
             self.set_home([position.x, position.y, position.z], yaw_deg)
 
