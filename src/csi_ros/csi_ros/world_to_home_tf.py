@@ -95,9 +95,8 @@ class TransformManager(Node):
                 rclpy.time.Time(),
                 timeout=rclpy.duration.Duration(seconds=0.1)
             )
-            transformed_pose = tf2_geometry_msgs.do_transform_pose(msg, transform)
-            position = [transformed_pose.vector.x, transformed_pose.vector.y, transformed_pose.vector.z]
-            orientation = transformed_pose.transform.rotation
+            position = [transform.vector.x, transform.vector.y, transform.vector.z]
+            orientation = transform.rotation
 
             # position = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
             # orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
