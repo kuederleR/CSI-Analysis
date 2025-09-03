@@ -80,7 +80,7 @@ class TransformManager(Node):
 
     def set_home(self, position, orientation):
         self.home_position = [float(x) for x in position]
-        self.home_orientation = float(orientation)
+        self.home_orientation = -float(orientation)
         self.home_transform_published = False
         self.publish_home_transform()
         self.get_logger().info(f'Home position set to: {position}, orientation set to: {orientation}')
