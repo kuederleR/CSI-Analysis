@@ -95,8 +95,8 @@ class TransformManager(Node):
                 rclpy.time.Time(),
                 timeout=rclpy.duration.Duration(seconds=0.1)
             )
-            position = [transform.vector.x, transform.vector.y, transform.vector.z]
-            orientation = transform.rotation
+            position = transform.transform.translation
+            orientation = transform.transform.rotation
 
             # position = [msg.pose.position.x, msg.pose.position.y, msg.pose.position.z]
             # orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
