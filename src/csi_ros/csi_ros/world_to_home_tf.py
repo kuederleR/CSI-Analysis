@@ -38,7 +38,7 @@ class TransformManager(Node):
         if not self.home_transform_published and self.home_position is not None and self.home_orientation is not None:
             self.get_logger().info('Attempting to publish static transform for start_frame...')
             if type(self.home_orientation) is float:
-                orientation_quat_wxyz = euler2quat(0.0, 0.0, self.home_orientation)
+                orientation_quat_wxyz = euler2quat(self.home_orientation, 0.0, 0.0)
             else:
                 orientation_quat_wxyz = self.home_orientation
 
