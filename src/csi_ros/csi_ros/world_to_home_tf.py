@@ -102,7 +102,7 @@ class TransformManager(Node):
             # orientation = [msg.pose.orientation.w, msg.pose.orientation.x, msg.pose.orientation.y, msg.pose.orientation.z]
             yaw, _, _ = quat2euler([orientation.w, orientation.x, orientation.y, orientation.z])
             yaw_deg = math.degrees(yaw)
-            self.set_home([position.x, position.y, position.z], yaw_deg)
+            self.set_home([position.x, position.y, position.z], yaw)
 
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
             self.get_logger().error(f"Error in home_pose_callback transform: {e}")
