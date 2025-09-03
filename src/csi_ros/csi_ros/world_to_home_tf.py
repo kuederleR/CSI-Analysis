@@ -85,7 +85,7 @@ class TransformManager(Node):
         self.publish_home_transform()
         self.get_logger().info(f'Home position set to: {position}, orientation set to: {orientation}')
     
-    def home_pose_callback(self, msg: PoseStamped):
+    def home_pose_callback(self, msg: Bool):
         odom_source_frame = 'world'
         odom_target_frame = 'base_link'
         try:
