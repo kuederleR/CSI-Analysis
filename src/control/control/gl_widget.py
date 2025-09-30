@@ -1,8 +1,9 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLabel, QPushButton, QFileDialog
+from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLabel, QPushButton, QFileDialog, QSplitter, QHBoxLayout
 import pyqtgraph as pg
 import numpy as np
-from PyQt6.QtCore import QTimer, QObject, pyqtSignal
+from PyQt6.QtCore import QTimer, QObject, pyqtSignal, Qt
+import time
 import threading
 from collections import deque
 
@@ -12,8 +13,10 @@ from rclpy.qos import qos_profile_sensor_data
 from tf2_ros import Buffer, TransformListener
 from geometry_msgs.msg import PoseStamped
 
+from wifi_msgs.msg import CSI
 
 import pyqtgraph.opengl as gl
+from log_manager import LogManager
 
 class PoseBridge(QObject):
     """
@@ -27,23 +30,110 @@ class RosSpinThread(threading.Thread):
     """
     Spins a ROS executor without touching Qt. Allows graceful stop.
     """
-    def __init__(self, node):
+    def __init__(self, *nodes):
         super().__init__(daemon=True)
         self._stop_evt = threading.Event()
-        self.node = node
+        self.nodes = nodes
 
     def run(self):
         from rclpy.executors import SingleThreadedExecutor
         executor = SingleThreadedExecutor()
-        executor.add_node(self.node)
+        for node in self.nodes:
+            executor.add_node(node)
         try:
             while not self._stop_evt.is_set():
                 executor.spin_once(timeout_sec=0.1)
         finally:
-            executor.remove_node(self.node)
+            for node in self.nodes:
+                executor.remove_node(node)
 
     def stop(self):
         self._stop_evt.set()
+
+
+class CSIBridge(QObject):
+    """
+    Thread-safe bridge for CSI data: emit updates from ROS thread, handled in GUI thread.
+    """
+    csi_received = pyqtSignal(object, object, int)  # (amplitude list, phase list, num_subcarriers)
+    def __init__(self):
+        super().__init__()
+
+
+class CSIPlotWidget(QWidget):
+    """Simple 2D plot for CSI amplitude/phase over subcarrier index."""
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        layout = QVBoxLayout(self)
+
+        title = QLabel("CSI Graph (Amplitude vs Subcarrier)")
+        title.setStyleSheet("color: #ddd; font-weight: bold; padding: 2px;")
+        layout.addWidget(title)
+
+        self.plot = pg.PlotWidget()
+        self.plot.showGrid(x=True, y=True, alpha=0.3)
+        self.plot.setLabel('bottom', 'Subcarrier Index')
+        self.plot.setLabel('left', 'Amplitude')
+        self.curve = self.plot.plot(pen=pg.mkPen((255, 255, 0), width=2))
+        layout.addWidget(self.plot)
+
+        # Secondary phase plot
+        self.phase_plot = pg.PlotWidget()
+        self.phase_plot.showGrid(x=True, y=True, alpha=0.3)
+        self.phase_plot.setLabel('bottom', 'Subcarrier Index')
+        self.phase_plot.setLabel('left', 'Phase (rad)')
+        self.phase_curve = self.phase_plot.plot(pen=pg.mkPen((0, 200, 255), width=2))
+        layout.addWidget(self.phase_plot)
+
+        # Average amplitude over time plot
+        self.avg_plot = pg.PlotWidget()
+        self.avg_plot.showGrid(x=True, y=True, alpha=0.3)
+        self.avg_plot.setLabel('bottom', 'Time (s)')
+        self.avg_plot.setLabel('left', 'Avg Amplitude')
+        self.avg_curve = self.avg_plot.plot(pen=pg.mkPen((0, 255, 100), width=2))
+        layout.addWidget(self.avg_plot)
+
+        self.setLayout(layout)
+
+        # Keep last x vector to avoid reallocating each update when size matches
+        self._last_n = 0
+        self._x = np.array([], dtype=float)
+        # Rolling buffer for average amplitude time series
+        self._avg_t0 = None
+        self._avg_times = deque(maxlen=2000)
+        self._avg_values = deque(maxlen=2000)
+
+    def update_data(self, amplitude_list, phase_list, num_subcarriers: int):
+        # Convert to numpy arrays
+        amps = np.asarray(amplitude_list, dtype=float)
+        phs = np.asarray(phase_list, dtype=float)
+        n = int(num_subcarriers) if num_subcarriers else len(amps)
+        if n <= 0:
+            return
+        if amps.size < n:
+            n = amps.size
+        if phs.size < n:
+            n = min(n, phs.size)
+        if n != self._last_n:
+            self._x = np.arange(n, dtype=float)
+            self._last_n = n
+        # slice in case arrays are longer
+        self.curve.setData(self._x[:n], amps[:n])
+        self.phase_curve.setData(self._x[:n], phs[:n])
+        # Update average amplitude over time
+        avg_val = float(np.mean(amps[:n])) if n > 0 else 0.0
+        now = time.monotonic()
+        if self._avg_t0 is None:
+            self._avg_t0 = now
+        t = now - self._avg_t0
+        self._avg_times.append(t)
+        self._avg_values.append(avg_val)
+        # Convert to numpy for plotting
+        if len(self._avg_times) > 1:
+            t_arr = np.fromiter(self._avg_times, dtype=float)
+            v_arr = np.fromiter(self._avg_values, dtype=float)
+            self.avg_curve.setData(t_arr, v_arr)
+            # Keep x-range auto; optionally clamp to last 60s by trimming deque size
 
 class GLWidget(QWidget):
     def __init__(self, parent=None):
@@ -53,10 +143,10 @@ class GLWidget(QWidget):
 
         layout.addWidget(self.gl_view)
         # Add scale label
-        self.scale_label = QLabel("Scale: 1 unit (axes length = 10)")
-        self.scale_label.setStyleSheet("color: #ccc; font-size: 11px; padding: 2px;")
+        # self.scale_label = QLabel("Scale: 1 unit (axes length = 10)")
+        # self.scale_label.setStyleSheet("color: #ccc; font-size: 11px; padding: 2px;")
 
-        layout.addWidget(self.scale_label)
+        # layout.addWidget(self.scale_label)
         self.setLayout(layout)
 
 
@@ -67,6 +157,27 @@ class GLWidget(QWidget):
         # Robot pose figure
         self.robot_pose = RobotPoseFigure(self.gl_view, axis_length=0.5)
         self.robot_pose.update_pose([0, 0, 0], [1, 0, 0, 0])  # identity orientation
+
+        # Logging controls row
+        self.log_manager_layout = QHBoxLayout()
+        self.log_dir_label = QLabel("Log dir: (not set)")
+        self.log_dir_label.setStyleSheet("color:#ccc; padding:2px;")
+        self.choose_dir_btn = QPushButton("Choose Log Dir")
+        self.start_log_btn = QPushButton("Start Log")
+        self.stop_log_btn = QPushButton("Stop Log")
+        self.stop_log_btn.setEnabled(False)
+        self.log_manager_layout.addWidget(self.log_dir_label)
+        self.log_manager_layout.addWidget(self.choose_dir_btn)
+        self.log_manager_layout.addWidget(self.start_log_btn)
+        self.log_manager_layout.addWidget(self.stop_log_btn)
+        layout.addLayout(self.log_manager_layout)
+
+        # Logging state
+        self._log_dir = None
+        self._log_mgr = None  # type: ignore[assignment]
+        self.choose_dir_btn.clicked.connect(self._choose_log_dir)
+        self.start_log_btn.clicked.connect(self._start_log)
+        self.stop_log_btn.clicked.connect(self._stop_log)
 
         self.view_reset_btn = QPushButton("Reset View")
         self.view_reset_btn.setStyleSheet("font-size: 11px; padding: 2px;")
@@ -112,6 +223,39 @@ class GLWidget(QWidget):
         self.gl_view.setCameraPosition(distance=6, elevation=-20, azimuth=45)
         self.gl_view.opts['fov'] = -60  # Field of view
 
+    # -------------------- Logging controls --------------------
+    def _choose_log_dir(self):
+        directory = QFileDialog.getExistingDirectory(self, "Choose log directory")
+        if directory:
+            self._log_dir = directory
+            self.log_dir_label.setText(f"Log dir: {directory}")
+
+    def _start_log(self):
+        from datetime import datetime
+        if self._log_mgr is not None:
+            return
+        # Default to CWD if not set
+        base_dir = self._log_dir or "."
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        path = f"{base_dir}/csi_pose_{ts}.json"
+        try:
+            self._log_mgr = LogManager(path)
+        except Exception as e:
+            self.log_dir_label.setText(f"Log error: {e}")
+            self._log_mgr = None
+            return
+        self.start_log_btn.setEnabled(False)
+        self.stop_log_btn.setEnabled(True)
+
+    def _stop_log(self):
+        if self._log_mgr is not None:
+            try:
+                self._log_mgr.close()
+            finally:
+                self._log_mgr = None
+        self.stop_log_btn.setEnabled(False)
+        self.start_log_btn.setEnabled(True)
+
     def export_scene(self):
         """
         Export current scene:
@@ -155,6 +299,21 @@ class GLWidget(QWidget):
                 c_idx = base_idx + 1
                 for i in range(3):
                     f.write(f"l {c_idx} {c_idx + 1 + i}\n")
+
+    # -------------------- Logging data handlers --------------------
+    def handle_pose_for_logging(self, position, quaternion):
+        if self._log_mgr is not None:
+            try:
+                self._log_mgr.update_pose(position, quaternion)
+            except Exception:
+                pass
+
+    def handle_csi_for_logging(self, amplitude_list, phase_list, num_subcarriers):
+        if self._log_mgr is not None:
+            try:
+                self._log_mgr.log_csi(amplitude_list, phase_list, num_subcarriers)
+            except Exception:
+                pass
 
 class RobotPoseFigure:
     def __init__(self, gl_view, axis_length=1.0, center_color=(1, 1, 1, 1), center_size=5):
@@ -222,6 +381,7 @@ class RobotPoseFigure:
         bridge.pose_received.connect(self.update_pose)
         node.set_pose_bridge(bridge)
 
+
 class GUIPoseNode(Node):
     def __init__(self):
         super().__init__('gui_pose_node')
@@ -247,25 +407,74 @@ class GUIPoseNode(Node):
         if self._pose_bridge:
             self._pose_bridge.pose_received.emit(position, quaternion)
 
+class GUICSIDataNode(Node):
+    def __init__(self):
+        super().__init__('gui_csi_data_node')
+        self._bridge: CSIBridge | None = None
+        self.csi_sub = self.create_subscription(CSI, '/csi_data', self.csi_callback, 10)
+
+    def csi_callback(self, msg):
+        # Forward data to GUI via bridge
+        if self._bridge is not None:
+            try:
+                self._bridge.csi_received.emit(list(msg.csi_amplitude), list(msg.csi_phase), int(msg.num_subcarriers))
+            except Exception:
+                # Be robust to type issues
+                amps = [float(x) for x in msg.csi_amplitude]
+                phs = [float(x) for x in msg.csi_phase]
+                nsc = int(getattr(msg, 'num_subcarriers', len(amps)))
+                self._bridge.csi_received.emit(amps, phs, nsc)
+
+    def set_bridge(self, bridge: CSIBridge):
+        self._bridge = bridge
+        
 
 class VisWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Basic 3D Viewer")
-        self.viewer = GLWidget(self)
-        self.setCentralWidget(self.viewer)
+        self.setWindowTitle("Pose + CSI Viewer")
+        # Left: 3D Pose, Right: 2D CSI
+        container = QWidget(self)
+        hbox = QHBoxLayout(container)
+        hbox.setContentsMargins(0, 0, 0, 0)
+        self.splitter = QSplitter(Qt.Orientation.Horizontal, container)
+        hbox.addWidget(self.splitter)
+        container.setLayout(hbox)
+
+        self.viewer = GLWidget(container)
+        self.csi_plot = CSIPlotWidget(container)
+        self.splitter.addWidget(self.viewer)
+        self.splitter.addWidget(self.csi_plot)
+        self.splitter.setStretchFactor(0, 3)
+        self.splitter.setStretchFactor(1, 2)
+        self.setCentralWidget(container)
 
         # Create ROS node & bridge
-        self.node = GUIPoseNode()
+        self.pose_node = GUIPoseNode()
         self.pose_bridge = PoseBridge()
-        self.viewer.robot_pose.link_node(self.node, self.pose_bridge)
+        self.viewer.robot_pose.link_node(self.pose_node, self.pose_bridge)
+        # Also forward pose to logger via viewer (GUI thread)
+        self.pose_bridge.pose_received.connect(self.viewer.handle_pose_for_logging)
+
+        self.csi_node = GUICSIDataNode()
+        self.csi_bridge = CSIBridge()
+        self.csi_bridge.csi_received.connect(self.csi_plot.update_data)
+        self.csi_node.set_bridge(self.csi_bridge)
+        # Also forward CSI to logger via viewer (GUI thread)
+        self.csi_bridge.csi_received.connect(self.viewer.handle_csi_for_logging)
 
         # Start ROS spin thread
-        self.ros_thread = RosSpinThread(self.node)
+        self.ros_thread = RosSpinThread(self.pose_node, self.csi_node)
         self.ros_thread.start()
 
     def closeEvent(self, event):
         # Graceful shutdown
+        # Close logger if open
+        try:
+            if getattr(self.viewer, '_log_mgr', None) is not None:
+                self.viewer._log_mgr.close()
+        except Exception:
+            pass
         if hasattr(self, 'ros_thread'):
             self.ros_thread.stop()
             self.ros_thread.join(timeout=1.0)
