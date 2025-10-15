@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             "starling_control = control.starling_control:main",
+            "vis_widget = control.gl_widget:main",
         ],
     },
 )

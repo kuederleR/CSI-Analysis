@@ -1,3 +1,5 @@
+#!/home/ryan/.xps-py/bin/python3
+
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLabel, QPushButton, QFileDialog, QSplitter, QHBoxLayout
 import pyqtgraph as pg
@@ -225,7 +227,19 @@ class GLWidget(QWidget):
 
     # -------------------- Logging controls --------------------
     def _choose_log_dir(self):
-        directory = QFileDialog.getExistingDirectory(self, "Choose log directory")
+        # Get the main window as parent to ensure dialog appears properly
+        main_window = self.window()
+        
+        # Force process events to ensure UI is responsive
+        QApplication.processEvents()
+        
+        # Use native dialog disabled to avoid freezing issues on Linux
+        directory = QFileDialog.getExistingDirectory(
+            main_window, 
+            "Choose log directory",
+            "",  # start directory (empty = current)
+            QFileDialog.Option.ShowDirsOnly | QFileDialog.Option.DontResolveSymlinks | QFileDialog.Option.DontUseNativeDialog
+        )
         if directory:
             self._log_dir = directory
             self.log_dir_label.setText(f"Log dir: {directory}")
@@ -262,9 +276,19 @@ class GLWidget(QWidget):
         - *.png: screenshot
         - *.obj: trajectory polyline + robot pose axes
         """
+        # Get the main window as parent to ensure dialog appears properly
+        main_window = self.window()
+        
+        # Force process events to ensure UI is responsive
+        QApplication.processEvents()
+        
+        # Use native dialog disabled to avoid freezing issues on Linux
         path, _ = QFileDialog.getSaveFileName(
-            self, "Export 3D Scene", "scene.obj",
-            "OBJ (*.obj);;PNG Screenshot (*.png)"
+            main_window, 
+            "Export 3D Scene", 
+            "scene.obj",
+            "OBJ (*.obj);;PNG Screenshot (*.png)",
+            options=QFileDialog.Option.DontUseNativeDialog
         )
         if not path:
             return
@@ -485,10 +509,13 @@ class VisWindow(QMainWindow):
             pass
         super().closeEvent(event)
 
-if __name__ == "__main__":
+def main():
     rclpy.init()
     app = QApplication(sys.argv)
     window = VisWindow()
     window.resize(800, 600)
     window.show()
     sys.exit(app.exec())
+
+if __name__ == "__main__":
+    main()

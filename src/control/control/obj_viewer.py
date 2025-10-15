@@ -180,6 +180,7 @@ class OBJViewerWidget(QWidget):
 
     def reset_camera(self):
         self.view.setCameraPosition(distance=10, elevation=-20, azimuth=45)
+        self.view.opts['fov'] = -60
 
 
 class OBJViewerWindow(QMainWindow):
